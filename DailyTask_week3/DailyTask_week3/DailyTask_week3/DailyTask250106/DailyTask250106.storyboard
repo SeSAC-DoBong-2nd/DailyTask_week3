@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uQL-ZZ-kwT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--인기 도시-->
+        <scene sceneID="PTk-lx-KKz">
+            <objects>
+                <tableViewController id="DPh-aw-0hi" customClass="CityTableViewController" customModule="DailyTask_week2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="YGN-rs-Gbn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Kl3-pI-Rif">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="113"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vTK-Lf-glr">
+                                    <rect key="frame" x="30" y="62" width="333" height="32"/>
+                                    <segments>
+                                        <segment title="모두"/>
+                                        <segment title="국내"/>
+                                        <segment title="해외"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="segmentValueChangedAction:" destination="DPh-aw-0hi" eventType="valueChanged" id="vg9-lg-wXt"/>
+                                    </connections>
+                                </segmentedControl>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cN-6r-lm0">
+                                    <rect key="frame" x="20" y="5" width="353" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="keyboardDismissAction:" destination="DPh-aw-0hi" eventType="editingDidEndOnExit" id="HAa-aI-999"/>
+                                        <action selector="searchTextFieldEditingChanged:" destination="DPh-aw-0hi" eventType="editingChanged" id="Nfr-Qh-LzZ"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="vTK-Lf-glr" secondAttribute="bottom" constant="20" id="9SI-OF-CGr"/>
+                                <constraint firstItem="vTK-Lf-glr" firstAttribute="leading" secondItem="Kl3-pI-Rif" secondAttribute="leading" constant="30" id="Aia-g9-ILC"/>
+                                <constraint firstItem="1cN-6r-lm0" firstAttribute="top" secondItem="Kl3-pI-Rif" secondAttribute="top" constant="5" id="DOA-47-DL2"/>
+                                <constraint firstAttribute="trailing" secondItem="1cN-6r-lm0" secondAttribute="trailing" constant="20" id="Dqw-pM-E59"/>
+                                <constraint firstAttribute="trailing" secondItem="vTK-Lf-glr" secondAttribute="trailing" constant="30" id="RvU-Rq-c5E"/>
+                                <constraint firstItem="1cN-6r-lm0" firstAttribute="leading" secondItem="Kl3-pI-Rif" secondAttribute="leading" constant="20" id="hgv-LN-HRu"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="DVx-cP-WzV">
+                                <rect key="frame" x="20" y="168.33333206176758" width="353" height="44.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DVx-cP-WzV" id="Rz0-MH-PC3">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="44.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DPh-aw-0hi" id="GH5-bV-ebn"/>
+                            <outlet property="delegate" destination="DPh-aw-0hi" id="oAH-W9-CiA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="인기 도시" id="Wgb-gQ-sSs"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itE-dm-VKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217.5572519083969" y="-78.16901408450704"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gB2-7A-zez">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uQL-ZZ-kwT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bMN-e2-2Aj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DPh-aw-0hi" kind="relationship" relationship="rootViewController" id="as2-9A-i9Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qF6-t0-63o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290.83969465648852" y="-78.16901408450704"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
