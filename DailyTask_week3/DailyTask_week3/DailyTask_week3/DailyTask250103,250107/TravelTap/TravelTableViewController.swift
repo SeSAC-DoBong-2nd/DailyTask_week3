@@ -103,6 +103,7 @@ class TravelTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let adCell = tableView.dequeueReusableCell(withIdentifier: AdTableViewCell.identifier) as! AdTableViewCell
         let travelRow = travelList[indexPath.row]
         let isAd = travelRow.ad ? true : false
         
@@ -112,9 +113,11 @@ class TravelTableViewController: UITableViewController {
             let sb = UIStoryboard(name: "DailyTask250103", bundle: nil)
             
             //2. 전환할 뷰컨트롤러 가져오기
-            let vc = sb.instantiateViewController(withIdentifier: "TouristPlaceViewController") as! TouristPlaceViewController
-            
-            navigationController?.pushViewController(vc, animated: true)
+            let vc = sb.instantiateViewController(withIdentifier: "AdViewController") as! AdViewController
+            vc.adTitleText = adCell.randomTitleText
+            vc.modalPresentationStyle = .fullScreen
+            vc.modalTransitionStyle = .crossDissolve
+            present(vc, animated: true)
         case false:
             //1. 뷰컨트롤러가 위치한 스토리보드 특정
             let sb = UIStoryboard(name: "DailyTask250103", bundle: nil)
@@ -130,3 +133,7 @@ class TravelTableViewController: UITableViewController {
     }
     
 }
+
+/* 미완
+ 1. didSelectRowAt에서 ad에 따라 adCell을 반환 받아 구성중인데, 이 때 adCell 클릭했을 때 그 안의 text를 어떻게 추적할까
+ */

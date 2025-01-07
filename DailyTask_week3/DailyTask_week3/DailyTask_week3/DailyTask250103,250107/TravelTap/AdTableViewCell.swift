@@ -10,6 +10,7 @@ import UIKit
 class AdTableViewCell: UITableViewCell {
     
     static let identifier = "AdTableViewCell"
+    let randomTitleText = ["하와이 여행을 가고 싶다면? 수업이 있는데 떠나실 생각은 아니시죠?", "도쿄 여행 예약은? Xcode로 직접 만드시면 되겠네요!"].randomElement() ?? "adTitleLabel error"
 
     @IBOutlet var adBackgroundView: UIView!
     @IBOutlet var adTitleLabel: UILabel!
@@ -25,7 +26,7 @@ class AdTableViewCell: UITableViewCell {
     }
     
     func setAdCellUI() {
-        let randomTitleText = ["하와이 여행을 가고 싶다면? 수업이 있는데 떠나실 생각은 아니시죠?", "도쿄 여행 예약은? Xcode로 직접 만드시면 되겠네요!"].randomElement() ?? "adTitleLabel error"
+        
         adTitleLabel.setLabelUI(randomTitleText,
                                      font: .systemFont(ofSize: 14, weight: .heavy),
                                      alignment: .center,
