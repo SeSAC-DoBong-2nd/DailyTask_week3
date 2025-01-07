@@ -16,7 +16,22 @@ class AdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setUI()
+    }
+    
+    func setUI() {
+        let leftBtn = UIBarButtonItem(title: "X",
+                                      style: .plain,
+                                      target: self,
+                                      action: #selector(leftBtnTapped))
+        navigationItem.leftBarButtonItem = leftBtn
+        
         adTitleLabel.setLabelUI(adTitleText ?? "", font: .boldSystemFont(ofSize: 30), numberOfLines: 3)
     }
-
+    
+    @objc
+    func leftBtnTapped() {
+        dismiss(animated: true)
+    }
+    
 }

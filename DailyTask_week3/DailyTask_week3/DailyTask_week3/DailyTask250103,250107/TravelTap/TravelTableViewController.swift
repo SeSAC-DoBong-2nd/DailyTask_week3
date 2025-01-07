@@ -115,9 +115,13 @@ class TravelTableViewController: UITableViewController {
             //2. 전환할 뷰컨트롤러 가져오기
             let vc = sb.instantiateViewController(withIdentifier: "AdViewController") as! AdViewController
             vc.adTitleText = adCell.randomTitleText
-            vc.modalPresentationStyle = .fullScreen
-            vc.modalTransitionStyle = .crossDissolve
-            present(vc, animated: true)
+            
+            let navVC = UINavigationController(rootViewController: vc)
+            navVC.navigationBar.tintColor = .black
+            navVC.modalPresentationStyle = .fullScreen
+            navVC.modalTransitionStyle = .crossDissolve
+            
+            present(navVC, animated: true)
         case false:
             //1. 뷰컨트롤러가 위치한 스토리보드 특정
             let sb = UIStoryboard(name: "DailyTask250103", bundle: nil)
@@ -136,4 +140,5 @@ class TravelTableViewController: UITableViewController {
 
 /* 미완
  1. didSelectRowAt에서 ad에 따라 adCell을 반환 받아 구성중인데, 이 때 adCell 클릭했을 때 그 안의 text를 어떻게 추적할까
+   - 현재 나는 adCell의 광고문구 값은 AdTableViewCell에서 직접 다루고 있어 방법이 없다.
  */
