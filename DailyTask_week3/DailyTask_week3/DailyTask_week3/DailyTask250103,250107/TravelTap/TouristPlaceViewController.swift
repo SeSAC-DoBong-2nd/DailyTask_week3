@@ -42,4 +42,9 @@ class TouristPlaceViewController: UIViewController {
                                           cornerRadius: 20)
     }
     
+    @IBAction
+    func popButtonTapped(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

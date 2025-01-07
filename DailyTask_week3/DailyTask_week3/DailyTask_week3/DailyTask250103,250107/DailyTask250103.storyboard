@@ -255,6 +255,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="popButtonTapped:" destination="SY9-gx-VTS" eventType="touchUpInside" id="NVh-df-DkG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AJY-v4-KKq"/>
