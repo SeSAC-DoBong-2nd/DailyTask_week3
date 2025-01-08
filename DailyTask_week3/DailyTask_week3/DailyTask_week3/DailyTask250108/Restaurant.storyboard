@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fte-72-MdG">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MY MEDIA-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아무데나 클릭해주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFO-Oa-cxq">
+                                <rect key="frame" x="72.666666666666686" y="444" width="248" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="brV-8P-37t"/>
+                                    <constraint firstAttribute="width" constant="248" id="kno-bY-LLM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="XFO-Oa-cxq" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="E2f-Ar-PEv"/>
+                            <constraint firstItem="XFO-Oa-cxq" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="EdU-Kz-Vp6"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wMN-vT-KLX" appends="YES" id="XOJ-HJ-1p1"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="MY MEDIA" id="Vai-CI-2Py"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="wMN-vT-KLX">
+                    <connections>
+                        <segue destination="1cT-m2-KIO" kind="show" id="Eqe-Yf-LYR"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
+        </scene>
+        <!--Restaurant View Controller-->
+        <scene sceneID="dbc-0B-OuP">
+            <objects>
+                <viewController id="1cT-m2-KIO" customClass="RestaurantViewController" customModule="DailyTask_week3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Ux-Ta-RaL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B7k-OF-pX0">
+                                <rect key="frame" x="10" y="113" width="373" height="32"/>
+                                <segments>
+                                    <segment title="전체"/>
+                                    <segment title="한식"/>
+                                    <segment title="중식"/>
+                                    <segment title="양식"/>
+                                    <segment title="기타"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="1cT-m2-KIO" eventType="valueChanged" id="Hyt-zX-PQ3"/>
+                                </connections>
+                            </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-g6-nJ9">
+                                <rect key="frame" x="0.0" y="149" width="393" height="669"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZAT-hj-i79"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6nc-g6-nJ9" firstAttribute="leading" secondItem="ZAT-hj-i79" secondAttribute="leading" id="ACv-Lj-D0X"/>
+                            <constraint firstItem="ZAT-hj-i79" firstAttribute="trailing" secondItem="B7k-OF-pX0" secondAttribute="trailing" constant="10" id="Bpa-K9-2Ta"/>
+                            <constraint firstItem="B7k-OF-pX0" firstAttribute="leading" secondItem="ZAT-hj-i79" secondAttribute="leading" constant="10" id="CSi-aT-vVa"/>
+                            <constraint firstItem="ZAT-hj-i79" firstAttribute="bottom" secondItem="6nc-g6-nJ9" secondAttribute="bottom" id="DsX-y2-NqQ"/>
+                            <constraint firstItem="B7k-OF-pX0" firstAttribute="top" secondItem="ZAT-hj-i79" secondAttribute="top" constant="10" id="MDf-nJ-Av6"/>
+                            <constraint firstItem="ZAT-hj-i79" firstAttribute="trailing" secondItem="6nc-g6-nJ9" secondAttribute="trailing" id="nub-zO-3cq"/>
+                            <constraint firstItem="6nc-g6-nJ9" firstAttribute="top" secondItem="B7k-OF-pX0" secondAttribute="bottom" constant="5" id="z8j-4N-raH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="e68-ZB-Y8E"/>
+                    <connections>
+                        <outlet property="mapView" destination="6nc-g6-nJ9" id="ubQ-tI-3Kg"/>
+                        <outlet property="segmentedControl" destination="B7k-OF-pX0" id="d7c-8e-9Rb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zog-OO-OxB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="-17"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fG9-tb-t4Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fte-72-MdG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lOb-W6-fdH">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="1Pu-DN-jod"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oHJ-zR-6Tg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
