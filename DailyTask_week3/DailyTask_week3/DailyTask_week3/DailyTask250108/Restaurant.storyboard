@@ -61,11 +61,15 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="B7k-OF-pX0">
                                 <rect key="frame" x="10" y="113" width="373" height="32"/>
                                 <segments>
+                                    <segment title="전체"/>
                                     <segment title="한식"/>
                                     <segment title="중식"/>
                                     <segment title="양식"/>
                                     <segment title="기타"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="1cT-m2-KIO" eventType="valueChanged" id="Hyt-zX-PQ3"/>
+                                </connections>
                             </segmentedControl>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nc-g6-nJ9">
                                 <rect key="frame" x="0.0" y="149" width="393" height="669"/>
