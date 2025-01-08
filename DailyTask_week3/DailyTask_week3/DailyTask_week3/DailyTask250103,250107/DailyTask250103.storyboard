@@ -6,19 +6,20 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--SeSAC TRVEL-->
         <scene sceneID="2EM-bN-Xsb">
             <objects>
-                <tableViewController id="fTa-KC-p5q" customClass="MagazineTableViewController" customModule="DailyTask_week2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="fTa-KC-p5q" customClass="MagazineTableViewController" customModule="DailyTask_week3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="Eat-la-pss">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MagazineTableViewCell" rowHeight="513" id="0JA-tc-pw0" customClass="MagazineTableViewCell" customModule="DailyTask_week2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MagazineTableViewCell" rowHeight="513" id="0JA-tc-pw0" customClass="MagazineTableViewCell" customModule="DailyTask_week3" customModuleProvider="target">
                                 <rect key="frame" x="20" y="55.333332061767578" width="353" height="513"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0JA-tc-pw0" id="G1A-uU-A1g">
@@ -88,14 +89,14 @@
         <!--도시 상세 정보-->
         <scene sceneID="k3L-9V-f3G">
             <objects>
-                <tableViewController id="X63-8V-c9V" customClass="TravelTableViewController" customModule="DailyTask_week2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="TravelTableViewController" id="X63-8V-c9V" customClass="TravelTableViewController" customModule="DailyTask_week3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="P8b-QA-uke">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TravelTableViewCell" rowHeight="188" id="UWa-2w-BPY" customClass="TravelTableViewCell" customModule="DailyTask_week2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TravelTableViewCell" rowHeight="188" id="UWa-2w-BPY" customClass="TravelTableViewCell" customModule="DailyTask_week3" customModuleProvider="target">
                                 <rect key="frame" x="20" y="55.333332061767578" width="353" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UWa-2w-BPY" id="1EA-xW-FzQ">
@@ -160,7 +161,7 @@
                                     <outlet property="travelImageView" destination="wBF-cx-hbL" id="BkZ-iB-xtm"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdTableViewCell" rowHeight="131" id="nrO-pW-2Ov" customClass="AdTableViewCell" customModule="DailyTask_week2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdTableViewCell" rowHeight="131" id="nrO-pW-2Ov" customClass="AdTableViewCell" customModule="DailyTask_week3" customModuleProvider="target">
                                 <rect key="frame" x="20" y="243.33333206176758" width="353" height="131"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nrO-pW-2Ov" id="KiO-x2-UNo">
@@ -222,16 +223,113 @@
             </objects>
             <point key="canvasLocation" x="4286.259541984733" y="-158.45070422535213"/>
         </scene>
+        <!--Tourist Place View Controller-->
+        <scene sceneID="VAf-as-Ksr">
+            <objects>
+                <viewController storyboardIdentifier="TouristPlaceViewController" id="SY9-gx-VTS" customClass="TouristPlaceViewController" customModule="DailyTask_week3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ii5-Jb-rUU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40L-Rx-KiY">
+                                <rect key="frame" x="20" y="79" width="353" height="353"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="40L-Rx-KiY" secondAttribute="height" multiplier="1:1" id="5Tq-aG-ASU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIP-hS-U4W">
+                                <rect key="frame" x="176" y="442" width="41.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6j-MF-gRa">
+                                <rect key="frame" x="30" y="483" width="333" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsY-dD-eNU">
+                                <rect key="frame" x="60" y="523.33333333333337" width="273" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZKW-jk-KHB"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="popButtonTapped:" destination="SY9-gx-VTS" eventType="touchUpInside" id="NVh-df-DkG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AJY-v4-KKq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bsY-dD-eNU" firstAttribute="leading" secondItem="AJY-v4-KKq" secondAttribute="leading" constant="60" id="3mZ-ZT-Sfk"/>
+                            <constraint firstItem="gIP-hS-U4W" firstAttribute="top" secondItem="40L-Rx-KiY" secondAttribute="bottom" constant="10" id="DOd-BA-h92"/>
+                            <constraint firstItem="40L-Rx-KiY" firstAttribute="top" secondItem="AJY-v4-KKq" secondAttribute="top" constant="20" id="DPz-FB-hDf"/>
+                            <constraint firstItem="AJY-v4-KKq" firstAttribute="trailing" secondItem="bsY-dD-eNU" secondAttribute="trailing" constant="60" id="Dyo-ug-oV8"/>
+                            <constraint firstItem="bsY-dD-eNU" firstAttribute="top" secondItem="J6j-MF-gRa" secondAttribute="bottom" constant="20" id="V4v-sD-KkO"/>
+                            <constraint firstItem="AJY-v4-KKq" firstAttribute="trailing" secondItem="J6j-MF-gRa" secondAttribute="trailing" constant="30" id="WAh-Hz-CsO"/>
+                            <constraint firstItem="AJY-v4-KKq" firstAttribute="trailing" secondItem="40L-Rx-KiY" secondAttribute="trailing" constant="20" id="bh0-0J-z3a"/>
+                            <constraint firstItem="J6j-MF-gRa" firstAttribute="leading" secondItem="AJY-v4-KKq" secondAttribute="leading" constant="30" id="ejp-wY-GJn"/>
+                            <constraint firstItem="gIP-hS-U4W" firstAttribute="centerX" secondItem="AJY-v4-KKq" secondAttribute="centerX" id="fSB-t4-kzK"/>
+                            <constraint firstItem="J6j-MF-gRa" firstAttribute="top" secondItem="gIP-hS-U4W" secondAttribute="bottom" constant="20" id="hB4-4L-f2u"/>
+                            <constraint firstItem="bsY-dD-eNU" firstAttribute="centerX" secondItem="AJY-v4-KKq" secondAttribute="centerX" id="nSF-5c-TY0"/>
+                            <constraint firstItem="40L-Rx-KiY" firstAttribute="leading" secondItem="AJY-v4-KKq" secondAttribute="leading" constant="20" id="wqf-JX-4gJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="bsY-dD-eNU" id="YXO-JQ-N7x"/>
+                        <outlet property="mainImageView" destination="40L-Rx-KiY" id="cpg-t3-5jW"/>
+                        <outlet property="subtitleLabel" destination="J6j-MF-gRa" id="zUU-LX-udU"/>
+                        <outlet property="titleLabel" destination="gIP-hS-U4W" id="ccA-3W-XHD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7R-SV-K82" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5134" y="-323"/>
+        </scene>
+        <!--Ad View Controller-->
+        <scene sceneID="tNU-iv-POO">
+            <objects>
+                <viewController storyboardIdentifier="AdViewController" id="avt-EK-twG" customClass="AdViewController" customModule="DailyTask_week3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oyw-Sa-LTW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UG-jL-MLT">
+                                <rect key="frame" x="30" y="415.66666666666669" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hzt-Zi-4Oe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8UG-jL-MLT" firstAttribute="leading" secondItem="hzt-Zi-4Oe" secondAttribute="leading" constant="30" id="MaZ-qo-BcR"/>
+                            <constraint firstItem="hzt-Zi-4Oe" firstAttribute="trailing" secondItem="8UG-jL-MLT" secondAttribute="trailing" constant="30" id="dcv-SO-Eln"/>
+                            <constraint firstItem="8UG-jL-MLT" firstAttribute="centerY" secondItem="oyw-Sa-LTW" secondAttribute="centerY" id="pE1-V6-LnR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adTitleLabel" destination="8UG-jL-MLT" id="0zv-Hj-3GY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dIy-bg-aQh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5134" y="332"/>
+        </scene>
         <!--쇼핑-->
         <scene sceneID="JJi-7M-5iA">
             <objects>
-                <tableViewController id="WYN-3B-tKm" customClass="ShoppingTableViewController" customModule="DailyTask_week2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="WYN-3B-tKm" customClass="ShoppingTableViewController" customModule="DailyTask_week3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="RSo-Ir-nxz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingTableViewHeaderCell" rowHeight="101" id="RDq-fc-IDs" customClass="ShoppingTableViewHeaderCell" customModule="DailyTask_week2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingTableViewHeaderCell" rowHeight="101" id="RDq-fc-IDs" customClass="ShoppingTableViewHeaderCell" customModule="DailyTask_week3" customModuleProvider="target">
                                 <rect key="frame" x="20" y="55.333332061767578" width="353" height="101"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RDq-fc-IDs" id="bgb-kc-OBR">
@@ -265,7 +363,7 @@
                                     <outlet property="shoppingTextField" destination="ZhJ-4K-Doy" id="mvr-Ur-uE6"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingTableViewCell" rowHeight="105" id="aKb-FV-5nY" customClass="ShoppingTableViewCell" customModule="DailyTask_week2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingTableViewCell" rowHeight="105" id="aKb-FV-5nY" customClass="ShoppingTableViewCell" customModule="DailyTask_week3" customModuleProvider="target">
                                 <rect key="frame" x="20" y="156.33333206176758" width="353" height="105"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aKb-FV-5nY" id="DCP-vQ-AjX">
@@ -342,7 +440,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eRH-Ss-pAq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2605.3435114503814" y="536.61971830985919"/>
+            <point key="canvasLocation" x="2604" y="569"/>
         </scene>
         <!--Magazine-->
         <scene sceneID="t56-Km-l1H">
@@ -366,37 +464,66 @@
         <!--인기 도시-->
         <scene sceneID="wbd-s9-c04">
             <objects>
-                <viewController id="aRo-bT-Xv9" sceneMemberID="viewController">
+                <viewController id="aRo-bT-Xv9" customClass="TopCitiesViewController" customModule="DailyTask_week3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CKh-TR-iso">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아무데나 탭 해주세요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ier-th-L7j">
-                                <rect key="frame" x="111" y="414" width="171" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sYI-vV-pRV">
+                                <rect key="frame" x="20" y="123" width="353" height="32"/>
+                                <segments>
+                                    <segment title="모두"/>
+                                    <segment title="국내"/>
+                                    <segment title="해외"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentValueChangedAction:" destination="aRo-bT-Xv9" eventType="valueChanged" id="ChR-Lb-pma"/>
+                                </connections>
+                            </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Axu-Jz-3cN">
+                                <rect key="frame" x="0.0" y="159" width="393" height="605"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Cwb-yp-j6W">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Q8o-60-ybC">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="R1M-Ov-h8L">
+                                            <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4W7-0H-m1z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Ier-th-L7j" firstAttribute="centerY" secondItem="CKh-TR-iso" secondAttribute="centerY" id="HR1-nF-xdA"/>
-                            <constraint firstItem="Ier-th-L7j" firstAttribute="centerX" secondItem="CKh-TR-iso" secondAttribute="centerX" id="nig-Yz-YtM"/>
+                            <constraint firstItem="Axu-Jz-3cN" firstAttribute="top" secondItem="sYI-vV-pRV" secondAttribute="bottom" constant="5" id="9HI-8p-2Iu"/>
+                            <constraint firstItem="4W7-0H-m1z" firstAttribute="trailing" secondItem="sYI-vV-pRV" secondAttribute="trailing" constant="20" id="Pd5-Ol-Bhq"/>
+                            <constraint firstItem="Axu-Jz-3cN" firstAttribute="leading" secondItem="4W7-0H-m1z" secondAttribute="leading" id="Srm-5b-RaD"/>
+                            <constraint firstItem="sYI-vV-pRV" firstAttribute="top" secondItem="4W7-0H-m1z" secondAttribute="top" constant="20" id="i1B-w6-O6S"/>
+                            <constraint firstItem="4W7-0H-m1z" firstAttribute="trailing" secondItem="Axu-Jz-3cN" secondAttribute="trailing" id="k5I-kH-I7o"/>
+                            <constraint firstItem="sYI-vV-pRV" firstAttribute="leading" secondItem="4W7-0H-m1z" secondAttribute="leading" constant="20" id="l8n-mh-GiN"/>
+                            <constraint firstItem="4W7-0H-m1z" firstAttribute="bottom" secondItem="Axu-Jz-3cN" secondAttribute="bottom" constant="5" id="sOw-tv-QJu"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Ha9-0T-KlD" appends="YES" id="wjh-c5-gYv"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="인기 도시" id="B6T-Uj-FVG"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Axu-Jz-3cN" id="KsQ-5z-yKT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WU1-5w-RoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Ha9-0T-KlD">
-                    <connections>
-                        <segue destination="X63-8V-c9V" kind="show" id="IXG-eM-9Ao"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Ha9-0T-KlD"/>
             </objects>
             <point key="canvasLocation" x="3469.4656488549617" y="-158.45070422535213"/>
         </scene>
