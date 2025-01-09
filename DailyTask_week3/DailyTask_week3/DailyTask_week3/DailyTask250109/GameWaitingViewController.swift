@@ -89,15 +89,6 @@ class GameWaitingViewController: UIViewController {
 //MARK: - UITextFieldDelegate
 extension GameWaitingViewController: UITextFieldDelegate {
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        print(#function)
-        //keyboardLayoutGuide 사용
-        //사용시 아래 1번 상황 발생
-//        view.keyboardLayoutGuideUse(view: numTextField)
-        
-//        view.keyboardLayoutGuide.topAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-    }
-    
     func textFieldDidChangeSelection(_ textField: UITextField) {
         guard let text = textField.text else {
             print("textFieldDidChangeSelection guard let Error")

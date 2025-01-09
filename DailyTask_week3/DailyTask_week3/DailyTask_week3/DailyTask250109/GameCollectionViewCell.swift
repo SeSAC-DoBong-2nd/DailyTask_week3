@@ -34,8 +34,4 @@ class GameCollectionViewCell: UICollectionViewCell {
         backView.layer.cornerRadius = self.backView.frame.width / 2
     }
     
-    func setTitle(state: String) {
-        titleLabel.text = state
-    }
-
 }
