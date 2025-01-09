@@ -69,7 +69,7 @@ private extension RestaurantViewController {
     
     //액션시트 활용
     func showActionSheet(title: String, message: String, actionArr: [String]) -> UIAlertController {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         for i in actionArr {
             alert.addAction(UIAlertAction(title: i, style: .default) { action in
                 self.filterRestaurant(category: i)
