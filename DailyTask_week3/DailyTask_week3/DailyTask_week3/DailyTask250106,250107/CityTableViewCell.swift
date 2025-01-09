@@ -45,7 +45,7 @@ class CityTableViewCell: UITableViewCell {
     }
 
     func setCityCellUI(image: String, cityNameText: String, explainText: String) {
-        cityImageView.kf.setImage(with: URL(string: image))
+        cityImageView.setImageKfDownSampling(with: image, cornerRadius: 0)
         cityNameLabel.text = cityNameText
         explainLabel.text = explainText
     }

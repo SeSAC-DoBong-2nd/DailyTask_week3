@@ -35,7 +35,7 @@ class TopCitiesCollectionViewCell: UICollectionViewCell {
         subtitleLabel.text = subtitleText ?? ""
         
         let width = mainImageView.frame.width
-        mainImageView.setImage(with: imageURL ?? "", cornerRadius: Int(width/2))
+        mainImageView.setImageKfDownSampling(with: imageURL ?? "", cornerRadius: Int(width/2))
     }
 
 }

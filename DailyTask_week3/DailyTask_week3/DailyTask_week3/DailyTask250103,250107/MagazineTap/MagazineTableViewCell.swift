@@ -17,7 +17,7 @@ class MagazineTableViewCell: UITableViewCell {
     @IBOutlet var dateLabel: UILabel!
     
     func setMagazineCellUI(image: String, title: String, subtitle: String, date: String) {
-        posterImageView.setImageViewUIWithKF(imageURL: image, cornerRadius: 20)
+        posterImageView.setImageKfDownSampling(with: image, cornerRadius: 20)
         
         titleLabel.setLabelUI(title,
                                    font: .boldSystemFont(ofSize: 20),

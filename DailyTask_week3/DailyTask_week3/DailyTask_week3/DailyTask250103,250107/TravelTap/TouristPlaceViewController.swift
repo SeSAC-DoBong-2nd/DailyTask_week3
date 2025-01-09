@@ -27,7 +27,7 @@ class TouristPlaceViewController: UIViewController {
     func setUI() {
         navigationItem.title = "관광지 화면"
         
-        mainImageView.setImageViewUIWithKF(imageURL: mainImage ?? "", cornerRadius: 10)
+        mainImageView.setImageKfDownSampling(with: mainImage ?? "", cornerRadius: 10)
         
         titleLabel.setLabelUI(titleText ?? "",
                               font: .boldSystemFont(ofSize: 30),
