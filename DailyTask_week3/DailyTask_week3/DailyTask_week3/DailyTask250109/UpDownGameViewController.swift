@@ -8,9 +8,11 @@
 import UIKit
 
 enum GameState {
+    
     case Up
     case Down
     case Good
+    
 }
 
 class UpDownGameViewController: UIViewController {
@@ -30,7 +32,6 @@ class UpDownGameViewController: UIViewController {
     }
     
     //cell의 isSelected를 판별할 배열
-    //뭔가 얘도 didset 걸고 새로 생성되도록 해야할 것 같은데.
     lazy var cellSelectedArr = Array(repeating: false, count: currentList.count)
     
     lazy var totalList = Array((1...(scope ?? 1)))
@@ -124,6 +125,8 @@ private extension UpDownGameViewController {
             print("Down")
             currentList = Array(lowCount...selectedNumber-1)
             cellSelectedArr = Array(repeating: false, count: currentList.count)
+            
+            //게임 진행 중 .Up일 경우 scope의 값이 바뀌어야 추후 범위 설정 시 일치하기에 설정
             scope = selectedNumber-1
             resultLabel.text = "DOWN"
             trycountLabel.text = "시도횟수 : \(tryCount)"
@@ -131,6 +134,8 @@ private extension UpDownGameViewController {
             print("Up")
             currentList = Array(selectedNumber+1...(scope ?? 2))
             cellSelectedArr = Array(repeating: false, count: currentList.count)
+            
+            //게임 진행 중 .Down일 경우 lowCount의 값이 바뀌어야 추후 범위 설정 시 일치하기에 설정
             lowCount = selectedNumber+1
             resultLabel.text = "UP"
             trycountLabel.text = "시도횟수 : \(tryCount)"

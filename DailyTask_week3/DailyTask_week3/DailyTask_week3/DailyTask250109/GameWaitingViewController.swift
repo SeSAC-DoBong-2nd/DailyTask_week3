@@ -7,6 +7,8 @@
 
 import UIKit
 
+import SnapKit
+
 class GameWaitingViewController: UIViewController {
     
     var mainImageArr = [
@@ -29,6 +31,7 @@ class GameWaitingViewController: UIViewController {
         view.backgroundColor = ._250109Background
         setRegister()
         setUI()
+        setLayout()
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,6 +48,7 @@ class GameWaitingViewController: UIViewController {
         mainImageView.contentMode = .scaleAspectFill
         
         titleLabel.setLabelUI("UP DOWN", font: .boldSystemFont(ofSize: 40), alignment: .center)
+        
         subtitleLabel.setLabelUI("GAME", font: .systemFont(ofSize: 20, weight: .regular), alignment: .center)
         
         numTextField.setTextField(font: .boldSystemFont(ofSize: 20),
@@ -56,6 +60,13 @@ class GameWaitingViewController: UIViewController {
                                          titleColor: .white,
                                          backgroundColor: .black,
                                          cornerRadius: 0)
+    }
+    
+    func setLayout() {
+        startButton.snp.makeConstraints {
+            $0.bottom.equalTo(self.view.keyboardLayoutGuide.snp.top)
+        }
+        view.keyboardLayoutGuide.topAnchor.constraint(equalTo: startButton.bottomAnchor).isActive = true
     }
     
     @IBAction
@@ -76,6 +87,7 @@ class GameWaitingViewController: UIViewController {
     
 }
 
+//MARK: - UITextFieldDelegate
 extension GameWaitingViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -83,6 +95,8 @@ extension GameWaitingViewController: UITextFieldDelegate {
         //keyboardLayoutGuide 사용
         //사용시 아래 1번 상황 발생
 //        view.keyboardLayoutGuideUse(view: numTextField)
+        
+//        view.keyboardLayoutGuide.topAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
@@ -102,5 +116,6 @@ extension GameWaitingViewController: UITextFieldDelegate {
 }
 
 /**
- 1. textField 키보드 올라갔다 내려오면 startButton UI가 풀림과 동시에 버튼 동작 안 함
+ 1. IB는 키보드 레이아웃 가이드가 안 먹는가..?!
+   - snapkit까지 동원하였으나 실패..
  */
