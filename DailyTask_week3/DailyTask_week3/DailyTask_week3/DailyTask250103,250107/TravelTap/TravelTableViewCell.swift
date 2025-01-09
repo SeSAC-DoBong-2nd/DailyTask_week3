@@ -35,7 +35,7 @@ class TravelTableViewCell: UITableViewCell {
             return
         }
         
-        travelImageView.setImageViewUIWithKF(imageURL: image, cornerRadius: 8)
+        travelImageView.setImageKfDownSampling(with: image, cornerRadius: 8)
         
         heartButton.setButtonUIWithImage(image: likeImage, tintColor: .red)
         

@@ -16,4 +16,11 @@ extension UIView {
         layer.maskedCorners = CACornerMask(arrayLiteral: maskedCorners)
     }
     
+    func keyboardLayoutGuideUse(view: UIView) {
+        self.keyboardLayoutGuide.topAnchor.constraint(
+            equalToSystemSpacingBelow: view.bottomAnchor,
+            multiplier: 1.0
+        ).isActive = true
+    }
+    
 }
