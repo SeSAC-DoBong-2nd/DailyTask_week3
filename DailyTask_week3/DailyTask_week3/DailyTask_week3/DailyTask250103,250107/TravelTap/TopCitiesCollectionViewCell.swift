@@ -27,14 +27,15 @@ class TopCitiesCollectionViewCell: UICollectionViewCell {
         titleLabel.setLabelUI("", font: .boldSystemFont(ofSize: 14), alignment: .center)
         
         subtitleLabel.setLabelUI("", font: .systemFont(ofSize: 10, weight: .regular), textColor: .black.withAlphaComponent(0.7), alignment: .center, numberOfLines: 2)
-        
-        mainImageView.setImageViewUIWithKF(imageURL: "", cornerRadius: 70)
+        mainImageView.contentMode = .scaleAspectFill
     }
     
     func setUI() {
         titleLabel.text = titleText ?? ""
         subtitleLabel.text = subtitleText ?? ""
-        mainImageView.kf.setImage(with: URL(string: imageURL ?? ""))
+        
+        let width = mainImageView.frame.width
+        mainImageView.setImage(with: imageURL ?? "", cornerRadius: Int(width/2))
     }
 
 }

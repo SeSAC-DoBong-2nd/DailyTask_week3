@@ -122,7 +122,9 @@ extension TopCitiesViewController: UICollectionViewDataSource {
         cityCell.titleText = cityCellRow.cityTotalName
         cityCell.subtitleText = cityCellRow.cityExplain
         
-        cityCell.setUI()
+        DispatchQueue.main.async {
+            cityCell.setUI()
+        }
         
         return cityCell
     }
