@@ -15,7 +15,6 @@ class JustClapViewController: UIViewController {
     @IBOutlet var resultLabel: UILabel!
     
     let pickerView = UIPickerView()
-    
     var justClapList = (1...100).map({String($0)})
     
     override func viewDidLoad() {
@@ -28,15 +27,15 @@ class JustClapViewController: UIViewController {
     func setUI() {
         titleLabel.setLabelUI("369 게임", font: .boldSystemFont(ofSize: 40), alignment: .center)
         
-        clapTextView.font = .systemFont(ofSize: 20, weight: .regular)
-        clapTextView.textColor = .lightGray
-        clapTextView.textAlignment = .center
-        clapTextView.text = "숫자를 선택해주세요!"
-        
         resultLabel.setLabelUI("숫자를 선택해주세요!",
                                font: .boldSystemFont(ofSize: 35),
                                alignment: .center,
                                numberOfLines: 0)
+        
+        clapTextView.font = .systemFont(ofSize: 20, weight: .regular)
+        clapTextView.textColor = .lightGray
+        clapTextView.textAlignment = .center
+        clapTextView.text = "숫자를 선택해주세요!"
         
         numTextField.inputView = pickerView
         numTextField.placeholder = "최대 숫자를 입력해주세요"
@@ -62,46 +61,22 @@ private extension JustClapViewController {
     func returnClapTextViewText(num: Int) -> [String] {
         let scope = (1...num).map({String($0)})
         
-        var str = scope.map {
-            $0.replacingOccurrences(of: "3", with: "👏")
-        }
-        str = str.map {
-            $0.replacingOccurrences(of: "6", with: "👏")
-        }
-        str = str.map {
-            $0.replacingOccurrences(of: "9", with: "👏")
-        }
+        // 정규식 코드 활용
+        let str = scope.map { $0.replacingOccurrences(of: "[369]", with: "👏", options: .regularExpression) }
         
         return str
     }
     
     func returnResultLabelText(str: String) -> Int {
-        var cnt = 0
         let mapStr = str.map { $0 }
-        for i in mapStr {
-            if i == "👏" {
-                cnt += 1
-            }
-        }
-        return cnt
+        let clapArr = mapStr.filter { $0 == "👏" }
+        return clapArr.count
     }
     
 }
 
 extension JustClapViewController: UITextFieldDelegate {
-    //실시간 textField text 변화 감지 (왜 한번 밖에 안 뜰까?)
-//    func textFieldDidChangeSelection(_ textField: UITextField) {
-//        guard let text = textField.text else {
-//            return
-//        }
-//        print(text)
-//        clapTextView.text =  returnClapTextViewText(num: Int(text) ?? 0).joined(separator: ",")
-//        
-//        let totalClapCount = returnResultLabelText(str: clapTextView.text)
-//        resultLabel.text = "숫자 \(text)까지 총 박수는 \(totalClapCount)번 입니다."
-//    }
-    
-    //실시간 textField text 변화 감지하는 textFieldDidChangeSelection 함수가 pickerView delegate로 값이 바뀌었을 때는 처음 밖에 동작하지 않아 아래 함수로 대체 하였습니다.
+    //textFiled를 키보드로 입력할 때에는 실시간 textField text 변화를 잘 감지하던 textFieldDidChangeSelection 함수가 pickerView delegate로 값이 바뀌었을 때는 처음 값이 바뀌었을 때 밖에 동작하지 않아 아래 함수로 대체 하였습니다.
     func textFieldDidEndEditing(_ textField: UITextField) {
         print(#function)
         guard let text = textField.text else {
@@ -153,3 +128,15 @@ extension JustClapViewController: UIPickerViewDataSource {
     }
     
 }
+
+//실시간 textField text 변화 감지 (왜 한번 밖에 안 뜰까?)
+//    func textFieldDidChangeSelection(_ textField: UITextField) {
+//        guard let text = textField.text else {
+//            return
+//        }
+//        print(text)
+//        clapTextView.text =  returnClapTextViewText(num: Int(text) ?? 0).joined(separator: ",")
+//
+//        let totalClapCount = returnResultLabelText(str: clapTextView.text)
+//        resultLabel.text = "숫자 \(text)까지 총 박수는 \(totalClapCount)번 입니다."
+//    }
