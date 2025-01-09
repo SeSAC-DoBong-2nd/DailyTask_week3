@@ -47,9 +47,13 @@ class GameWaitingViewController: UIViewController {
         mainImageView.image = mainImageArr.randomElement()
         mainImageView.contentMode = .scaleAspectFill
         
-        titleLabel.setLabelUI("UP DOWN", font: .boldSystemFont(ofSize: 40), alignment: .center)
+        titleLabel.setLabelUI("UP DOWN",
+                              font: .boldSystemFont(ofSize: 40),
+                              alignment: .center)
         
-        subtitleLabel.setLabelUI("GAME", font: .systemFont(ofSize: 20, weight: .regular), alignment: .center)
+        subtitleLabel.setLabelUI("GAME",
+                                 font: .systemFont(ofSize: 20,weight: .regular),
+                                 alignment: .center)
         
         numTextField.setTextField(font: .boldSystemFont(ofSize: 20),
                                   placeholder: "숫자를 입력해주세요",
@@ -108,5 +112,5 @@ extension GameWaitingViewController: UITextFieldDelegate {
 /**
  1. IB는 키보드 레이아웃 가이드가 안 먹는가..?!
    - snapkit까지 동원하였으나 실패..
-   - storyBoard startButton bottom 제약 조건 삭제하고, 66번 line 코드 실행하니 성공!
+   - storyBoard startButton bottom 제약 조건 삭제하고, 69번 line 코드 실행하니 성공!
  */

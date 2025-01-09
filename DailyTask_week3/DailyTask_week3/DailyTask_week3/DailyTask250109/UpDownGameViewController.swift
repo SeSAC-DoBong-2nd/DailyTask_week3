@@ -7,6 +7,7 @@
 
 import UIKit
 
+//게임상태를 다룰 enum 생성
 enum GameState {
     
     case Up
@@ -17,12 +18,12 @@ enum GameState {
 
 class UpDownGameViewController: UIViewController {
     
-    var gameState: GameState = .Down
-    var scope: Int?
-    var lowCount = 1
-    var tryCount = 0
-    var selectedNumber = 0
-    lazy var gameRandomNumber = (1...(scope ?? 1)).randomElement()
+    var gameState: GameState = .Down //현재 게임 상태
+    var scope: Int? //이전 화면에서 입력받은 숫자 담는 변수
+    var minScope = 1 //최저 숫자 담을 변수
+    var selectedNumber = 0 //현재 선택한 숫자
+    var tryCount = 0 //시도 횟수
+    lazy var gameRandomNumber = (1...(scope ?? 1)).randomElement() //랜덤 선정 숫자
     
     //resultButton의 isEnable 상태를 판별할 변수
     var isEnableButton: Bool = false {
@@ -34,7 +35,10 @@ class UpDownGameViewController: UIViewController {
     //cell의 isSelected를 판별할 배열
     lazy var cellSelectedArr = Array(repeating: false, count: currentList.count)
     
+    //숫자 범위 list
     lazy var totalList = Array((1...(scope ?? 1)))
+    
+    //현재 숫자 범위 list
     lazy var currentList = totalList {
         didSet {
             gameCollectionView.reloadData()
@@ -69,13 +73,23 @@ class UpDownGameViewController: UIViewController {
     func setUI() {
         view.backgroundColor = ._250109Background
         
-        gameCollectionView.backgroundColor = ._250109Background
+        //횡 스크롤 인디케이터 숨기기
         gameCollectionView.showsHorizontalScrollIndicator = false
+        gameCollectionView.backgroundColor = ._250109Background
         
-        resultLabel.setLabelUI("UP DOWN", font: .boldSystemFont(ofSize: 40), alignment: .center)
-        trycountLabel.setLabelUI("시도횟수: \(tryCount)", font: .systemFont(ofSize: 20, weight: .regular), alignment: .center)
+        resultLabel.setLabelUI("UP DOWN",
+                               font: .boldSystemFont(ofSize: 40),
+                               alignment: .center)
         
-        resultButton.setButtonUIWithTitle(title: "결과 확인하기", titleColor: .white, backgroundColor: .lightGray, cornerRadius: 0)
+        trycountLabel.setLabelUI("시도횟수: \(tryCount)",
+                                 font: .systemFont(ofSize: 20, weight: .regular),
+                                 alignment: .center)
+        
+        resultButton.setButtonUIWithTitle(title: "결과 확인하기",
+                                          titleColor: .white,
+                                          backgroundColor: .lightGray,
+                                          cornerRadius: 0)
+        
         resultButton.isEnabled = isEnableButton
     }
     
@@ -86,7 +100,10 @@ class UpDownGameViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.sectionInset = UIEdgeInsets(top: screenInset, left: screenInset, bottom: screenInset, right: screenInset)
+        layout.sectionInset = UIEdgeInsets(top: screenInset,
+                                           left: screenInset,
+                                           bottom: screenInset,
+                                           right: screenInset)
         layout.minimumInteritemSpacing = 8
         layout.minimumLineSpacing = lineSpacing
         layout.itemSize = CGSize(width: useAbleHeight/5, height: useAbleHeight/5)
@@ -123,7 +140,7 @@ private extension UpDownGameViewController {
         switch gameState {
         case .Down:
             print("Down")
-            currentList = Array(lowCount...selectedNumber-1)
+            currentList = Array(minScope...selectedNumber-1)
             cellSelectedArr = Array(repeating: false, count: currentList.count)
             
             //게임 진행 중 .Up일 경우 scope의 값이 바뀌어야 추후 범위 설정 시 일치하기에 설정
@@ -136,7 +153,7 @@ private extension UpDownGameViewController {
             cellSelectedArr = Array(repeating: false, count: currentList.count)
             
             //게임 진행 중 .Down일 경우 lowCount의 값이 바뀌어야 추후 범위 설정 시 일치하기에 설정
-            lowCount = selectedNumber+1
+            minScope = selectedNumber+1
             resultLabel.text = "UP"
             trycountLabel.text = "시도횟수 : \(tryCount)"
         case .Good:
