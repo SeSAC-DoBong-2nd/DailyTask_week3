@@ -1,0 +1,110 @@
+//
+//  TravelTalkViewController.swift
+//  DailyTask_week3
+//
+//  Created by 박신영 on 1/11/25.
+//
+
+import UIKit
+
+class TravelTalkViewController: UIViewController {
+
+    @IBOutlet var travelTalkCollectionView: UICollectionView!
+    @IBOutlet var navigationUnderLineView: UIView!
+    
+    let chatMockList: [ChatRoom] = MockChatList().mockChatList
+    let searchController = UISearchController()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setRegister()
+        setTopUI()
+        setCollectionViewLayout()
+    }
+    
+    func setRegister() {
+        searchController.searchBar.delegate = self
+        
+        let id = TravelTalkCollectionViewCell.identifier
+        let xib = UINib(nibName: id, bundle: nil)
+        let id2 = GroupTravelTalkCollectionViewCell.identifier
+        let xib2 = UINib(nibName: id2, bundle: nil)
+        travelTalkCollectionView.register(xib, forCellWithReuseIdentifier: id)
+        travelTalkCollectionView.register(xib2, forCellWithReuseIdentifier: id2)
+        
+        travelTalkCollectionView.delegate = self
+        travelTalkCollectionView.dataSource = self
+    }
+    
+    func setTopUI() {
+        navigationItem.searchController = searchController
+        searchController.searchBar.placeholder = "친구 이름을 검색해보세요"
+        
+        navigationUnderLineView.backgroundColor = .lightGray
+    }
+    
+    func setCollectionViewLayout() {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.minimumLineSpacing = 12 //세로 간격
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+        let screenWidth = UIScreen.main.bounds.width
+        
+        layout.itemSize = CGSize(width: screenWidth, height: 100)
+        
+        travelTalkCollectionView.collectionViewLayout = layout
+    }
+
+
+}
+
+extension TravelTalkViewController: UISearchBarDelegate {
+    
+}
+
+extension TravelTalkViewController: UICollectionViewDelegate {
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        <#code#>
+//    }
+    
+}
+
+extension TravelTalkViewController: UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return chatMockList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let chatRoom = chatMockList[indexPath.item]
+        let date = chatRoom.chatList[chatRoom.chatList.count-1].date
+        
+        if chatRoom.chatroomId == 1 {
+            let groupCell = collectionView.dequeueReusableCell(withReuseIdentifier: GroupTravelTalkCollectionViewCell.identifier, for: indexPath)
+            as! GroupTravelTalkCollectionViewCell
+            
+            groupCell.setTravelTalkCellUI(
+                image: chatRoom.chatroomImage,
+                nickname: chatRoom.chatroomName,
+                message: chatRoom.chatList[chatRoom.chatList.count-1].message,
+                date: CustomDateFormatter.shard.setDateInTravelTalk(strDate: date)
+            )
+            
+            return groupCell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TravelTalkCollectionViewCell.identifier, for: indexPath)
+            as! TravelTalkCollectionViewCell
+            cell.setTravelTalkCellUI(
+                image: chatRoom.chatroomImage,
+                nickname: chatRoom.chatroomName,
+                message: chatRoom.chatList[chatRoom.chatList.count-1].message,
+                date: CustomDateFormatter.shard.setDateInTravelTalk(strDate: date)
+            )
+            
+            return cell
+        }
+    }
+    
+}

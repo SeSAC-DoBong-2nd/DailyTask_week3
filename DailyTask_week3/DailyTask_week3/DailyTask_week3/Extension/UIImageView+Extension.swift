@@ -11,6 +11,14 @@ import Kingfisher
 
 extension UIImageView {
     
+    func setImageView(image: UIImage, cornerRadius: CGFloat) {
+        self.image = image
+        self.contentMode = .scaleAspectFit
+        self.layer.cornerRadius = cornerRadius
+        self.layer.borderWidth = 0.1
+        self.layer.borderColor = .none
+    }
+    
     func setImageViewUIWithKF(imageURL: String, cornerRadius: Int) {
         self.kf.setImage(with: URL(string: imageURL), options: [
             .transition(.none), // kf에 기본으로 내장된 페이드 애니메이션 비활성화
