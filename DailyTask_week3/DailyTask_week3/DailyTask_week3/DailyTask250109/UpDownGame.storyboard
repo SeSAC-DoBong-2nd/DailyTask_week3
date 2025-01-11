@@ -35,8 +35,8 @@
                                     <constraint firstAttribute="width" secondItem="jcs-FV-Nfs" secondAttribute="height" multiplier="1:1" id="QVi-OM-NCF"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Io-eS-NQg">
-                                <rect key="frame" x="20" y="748" width="353" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Io-eS-NQg">
+                                <rect key="frame" x="20" y="768" width="353" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button"/>
@@ -44,8 +44,8 @@
                                     <action selector="startButtonTapped:" destination="Ndm-kN-Irz" eventType="touchUpInside" id="Z2o-w4-cyD"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YCI-4P-HKk">
-                                <rect key="frame" x="40" y="664" width="313" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YCI-4P-HKk">
+                                <rect key="frame" x="40" y="684" width="313" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -58,6 +58,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Ea4-5m-0Zz" firstAttribute="top" secondItem="WKP-N8-j6O" secondAttribute="top" constant="20" id="9wA-BF-Rgv"/>
+                            <constraint firstItem="lmI-0N-fLu" firstAttribute="top" secondItem="6Io-eS-NQg" secondAttribute="bottom" constant="10" id="F41-ai-KaY"/>
                             <constraint firstItem="6Io-eS-NQg" firstAttribute="top" secondItem="YCI-4P-HKk" secondAttribute="bottom" constant="50" id="JeA-de-L8V"/>
                             <constraint firstItem="WKP-N8-j6O" firstAttribute="trailing" secondItem="YCI-4P-HKk" secondAttribute="trailing" constant="40" id="Jwh-Hd-C8w"/>
                             <constraint firstItem="tqq-Ju-ZYJ" firstAttribute="trailing" secondItem="Ea4-5m-0Zz" secondAttribute="trailing" id="Nuy-Jn-cvI"/>
