@@ -67,9 +67,7 @@ class GameWaitingViewController: UIViewController {
     }
     
     func setLayout() {
-        self.view.keyboardLayoutGuide.snp.makeConstraints {
-            $0.top.equalTo(startButton.snp.bottom)
-        }
+        view.keyboardLayoutGuide.topAnchor.constraint(equalTo: startButton.bottomAnchor).isActive = true
     }
     
     @IBAction
@@ -113,4 +111,5 @@ extension GameWaitingViewController: UITextFieldDelegate {
  1. IB는 키보드 레이아웃 가이드가 안 먹는가..?!
    - snapkit까지 동원하였으나 실패..
    - storyBoard startButton bottom 제약 조건 삭제하고, 69번 line 코드 실행하니 성공!
+     - snapkit 관련 코드 사용하지 않는 방법을 재수정!
  */
