@@ -57,6 +57,78 @@
             </objects>
             <point key="canvasLocation" x="1052.6717557251909" y="-34.507042253521128"/>
         </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="1Bf-aW-7Mc">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" id="t55-2d-gSE" customClass="ChatViewController" customModule="DailyTask_week3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dQr-dw-vH0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Mi-Sy-WG3">
+                                <rect key="frame" x="0.0" y="59" width="393" height="685"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeE-Lj-v0A">
+                                <rect key="frame" x="30" y="754" width="333" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xvI-9a-59q">
+                                        <rect key="frame" x="10" y="8" width="261" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="614-Sn-v61">
+                                        <rect key="frame" x="279" y="2" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="pEf-Xc-JjU"/>
+                                            <constraint firstAttribute="height" constant="44" id="wEL-Y4-6I6"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="614-Sn-v61" firstAttribute="leading" secondItem="xvI-9a-59q" secondAttribute="trailing" constant="8" id="ITh-hu-qus"/>
+                                    <constraint firstItem="xvI-9a-59q" firstAttribute="top" secondItem="TeE-Lj-v0A" secondAttribute="top" constant="8" id="MAe-DY-G9H"/>
+                                    <constraint firstItem="xvI-9a-59q" firstAttribute="leading" secondItem="TeE-Lj-v0A" secondAttribute="leading" constant="10" id="MLo-y6-xQN"/>
+                                    <constraint firstAttribute="trailing" secondItem="614-Sn-v61" secondAttribute="trailing" constant="10" id="P72-8f-EoY"/>
+                                    <constraint firstItem="614-Sn-v61" firstAttribute="centerY" secondItem="TeE-Lj-v0A" secondAttribute="centerY" id="T8y-bC-iJn"/>
+                                    <constraint firstAttribute="height" constant="48" id="sKk-nI-gn3"/>
+                                    <constraint firstAttribute="bottom" secondItem="xvI-9a-59q" secondAttribute="bottom" constant="8" id="ypk-bO-rbO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NM1-f1-4U8"/>
+                        <keyboardLayoutGuide key="keyboard" id="5bJ-qS-Yft"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="TeE-Lj-v0A" firstAttribute="leading" secondItem="NM1-f1-4U8" secondAttribute="leading" constant="30" id="AZk-4e-2lH"/>
+                            <constraint firstItem="1Mi-Sy-WG3" firstAttribute="leading" secondItem="NM1-f1-4U8" secondAttribute="leading" id="JLv-uB-FfU"/>
+                            <constraint firstItem="5bJ-qS-Yft" firstAttribute="top" secondItem="TeE-Lj-v0A" secondAttribute="bottom" constant="16" id="PxD-oO-4aB"/>
+                            <constraint firstItem="NM1-f1-4U8" firstAttribute="trailing" secondItem="TeE-Lj-v0A" secondAttribute="trailing" constant="30" id="gJZ-Hu-XkL"/>
+                            <constraint firstItem="1Mi-Sy-WG3" firstAttribute="top" secondItem="NM1-f1-4U8" secondAttribute="top" id="kIU-Rg-ZXy"/>
+                            <constraint firstItem="TeE-Lj-v0A" firstAttribute="top" secondItem="1Mi-Sy-WG3" secondAttribute="bottom" constant="10" id="qxL-3G-pen"/>
+                            <constraint firstItem="1Mi-Sy-WG3" firstAttribute="trailing" secondItem="NM1-f1-4U8" secondAttribute="trailing" id="ynJ-gR-7er"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GiA-A0-bVm" appends="YES" id="6n4-BZ-2l1"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="chatTableView" destination="1Mi-Sy-WG3" id="4Zb-C8-xkh"/>
+                        <outlet property="sendButton" destination="614-Sn-v61" id="UaJ-cz-YPd"/>
+                        <outlet property="textField" destination="xvI-9a-59q" id="VOo-1y-Dau"/>
+                        <outlet property="textFieldContainer" destination="TeE-Lj-v0A" id="Huq-s2-Kbe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARB-ib-uQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GiA-A0-bVm">
+                    <connections>
+                        <action selector="keyboardDismiss:" destination="t55-2d-gSE" id="huw-Ip-oo6"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2026.7175572519084" y="-21.126760563380284"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="CJr-Ab-W0z">
             <objects>
@@ -65,6 +137,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vsd-dX-zpm">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

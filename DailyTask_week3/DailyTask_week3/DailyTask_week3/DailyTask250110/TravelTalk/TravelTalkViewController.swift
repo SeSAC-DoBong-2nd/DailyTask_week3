@@ -62,7 +62,6 @@ class TravelTalkViewController: UIViewController {
         travelTalkCollectionView.collectionViewLayout = layout
     }
 
-
 }
 
 extension TravelTalkViewController: UISearchBarDelegate {
@@ -97,9 +96,19 @@ extension TravelTalkViewController: UISearchBarDelegate {
 
 extension TravelTalkViewController: UICollectionViewDelegate {
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let chatRoom = currentChatList[indexPath.item]
+        
+        //1. 뷰컨트롤러가 위치한 스토리보드 특정
+        let sb = UIStoryboard(name: "Chatting", bundle: nil)
+        
+        //2. 전환할 뷰컨트롤러 가져오기
+        let vc = sb.instantiateViewController(withIdentifier: "ChatViewController") as! ChatViewController
+        
+        //ChatRoom 형태의 데이터 넘겨주기
+        vc.chatList = chatRoom
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }
 
