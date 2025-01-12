@@ -12,11 +12,18 @@ class TravelTalkViewController: UIViewController {
     @IBOutlet var travelTalkCollectionView: UICollectionView!
     @IBOutlet var navigationUnderLineView: UIView!
     
-    let chatMockList: [ChatRoom] = MockChatList().mockChatList
     let searchController = UISearchController()
+    let chatMockList: [ChatRoom] = MockChatList().mockChatList
+    var currentChatList: [ChatRoom] = [] {
+        didSet {
+            travelTalkCollectionView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        currentChatList = chatMockList
         setRegister()
         setTopUI()
         setCollectionViewLayout()
@@ -60,6 +67,22 @@ class TravelTalkViewController: UIViewController {
 
 extension TravelTalkViewController: UISearchBarDelegate {
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(#function)
+        var filterChatList = chatMockList
+        filterChatList = filterChatList.filter {
+            $0.chatList.contains {
+                $0.user.rawValue.uppercased() == searchText.uppercased()
+            }
+        }
+        
+        if searchText.isEmpty {
+            currentChatList = chatMockList
+            return
+        }
+        currentChatList = filterChatList
+    }
+    
 }
 
 extension TravelTalkViewController: UICollectionViewDelegate {
@@ -73,12 +96,11 @@ extension TravelTalkViewController: UICollectionViewDelegate {
 extension TravelTalkViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return chatMockList.count
+        return currentChatList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let chatRoom = chatMockList[indexPath.item]
+        let chatRoom = currentChatList[indexPath.item]
         let date = chatRoom.chatList[chatRoom.chatList.count-1].date
         
         if chatRoom.chatroomId == 1 {
