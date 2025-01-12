@@ -64,6 +64,7 @@ class TravelTalkViewController: UIViewController {
 
 }
 
+//MARK: - UISearchBarDelegate
 extension TravelTalkViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -94,6 +95,7 @@ extension TravelTalkViewController: UISearchBarDelegate {
     
 }
 
+//MARK: - UICollectionViewDelegate
 extension TravelTalkViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -112,6 +114,7 @@ extension TravelTalkViewController: UICollectionViewDelegate {
     
 }
 
+//MARK: - UICollectionViewDataSource
 extension TravelTalkViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
