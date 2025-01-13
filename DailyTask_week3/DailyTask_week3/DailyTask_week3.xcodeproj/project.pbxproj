@@ -1,0 +1,919 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EBB059D2D2FA84F002C52D6 /* UpDownGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBB059C2D2FA84F002C52D6 /* UpDownGame.storyboard */; };
+		9EBB059F2D2FA864002C52D6 /* UpDownGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB059E2D2FA864002C52D6 /* UpDownGameViewController.swift */; };
+		9EBB05A12D2FA9DB002C52D6 /* GameWaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB05A02D2FA9DB002C52D6 /* GameWaitingViewController.swift */; };
+		9EBB05A32D2FAB25002C52D6 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB05A22D2FAB25002C52D6 /* UITextField+Extension.swift */; };
+		9EBB05A62D2FB979002C52D6 /* GameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB05A42D2FB979002C52D6 /* GameCollectionViewCell.swift */; };
+		9EBB05A72D2FB979002C52D6 /* GameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EBB05A52D2FB979002C52D6 /* GameCollectionViewCell.xib */; };
+		9EBB05DA2D2FDD98002C52D6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9EBB05D92D2FDD98002C52D6 /* SnapKit */; };
+		9EBB061B2D3298C8002C52D6 /* Chatting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EBB061A2D3298C8002C52D6 /* Chatting.storyboard */; };
+		9EBB061D2D3298F1002C52D6 /* TravelTalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB061C2D3298F1002C52D6 /* TravelTalkViewController.swift */; };
+		9EBB061F2D329901002C52D6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB061E2D329901002C52D6 /* ChatViewController.swift */; };
+		9EBB06242D32A83D002C52D6 /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB06232D32A83D002C52D6 /* ChattingData.swift */; };
+		9EBB06272D32B0F2002C52D6 /* TravelTalkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB06252D32B0F2002C52D6 /* TravelTalkCollectionViewCell.swift */; };
+		9EBB06282D32B0F2002C52D6 /* TravelTalkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EBB06262D32B0F2002C52D6 /* TravelTalkCollectionViewCell.xib */; };
+		9EBB062B2D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB06292D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.swift */; };
+		9EBB062C2D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EBB062A2D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.xib */; };
+		9EBB06302D32C211002C52D6 /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB062F2D32C211002C52D6 /* DateFormatter+.swift */; };
+		9EBB065B2D339CAE002C52D6 /* OtherChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EBB065A2D339CAE002C52D6 /* OtherChatTableViewCell.xib */; };
+		9EBB065C2D339CAE002C52D6 /* OtherChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB06592D339CAE002C52D6 /* OtherChatTableViewCell.swift */; };
+		9EBB06812D33A7D2002C52D6 /* MyChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EBB06802D33A7D2002C52D6 /* MyChatTableViewCell.xib */; };
+		9EBB06822D33A7D2002C52D6 /* MyChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB067F2D33A7D2002C52D6 /* MyChatTableViewCell.swift */; };
+		9EBB06852D33DE40002C52D6 /* DateLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EBB06842D33DE40002C52D6 /* DateLineTableViewCell.xib */; };
+		9EBB06862D33DE40002C52D6 /* DateLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBB06832D33DE40002C52D6 /* DateLineTableViewCell.swift */; };
+		9EEADEF22D2D5D0B005DF26A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADEF02D2D5D0B005DF26A /* SceneDelegate.swift */; };
+		9EEADEF32D2D5D0B005DF26A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADEEE2D2D5D0B005DF26A /* AppDelegate.swift */; };
+		9EEADF372D2D5D3D005DF26A /* DailyTask250102.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF0B2D2D5D3D005DF26A /* DailyTask250102.storyboard */; };
+		9EEADF382D2D5D3D005DF26A /* AutoLayoutNaver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADEFE2D2D5D3D005DF26A /* AutoLayoutNaver.storyboard */; };
+		9EEADF392D2D5D3D005DF26A /* AutoLayoutKakaotalk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADEFC2D2D5D3D005DF26A /* AutoLayoutKakaotalk.storyboard */; };
+		9EEADF3A2D2D5D3D005DF26A /* DailyTask 2nd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF342D2D5D3D005DF26A /* DailyTask 2nd.storyboard */; };
+		9EEADF3C2D2D5D3D005DF26A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADEF52D2D5D3D005DF26A /* Assets.xcassets */; };
+		9EEADF3D2D2D5D3D005DF26A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADEF72D2D5D3D005DF26A /* LaunchScreen.storyboard */; };
+		9EEADF3E2D2D5D3D005DF26A /* Tamagotchi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF042D2D5D3D005DF26A /* Tamagotchi.storyboard */; };
+		9EEADF3F2D2D5D3D005DF26A /* NeologismFinder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF312D2D5D3D005DF26A /* NeologismFinder.storyboard */; };
+		9EEADF402D2D5D3D005DF26A /* DailyTask250103.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF1B2D2D5D3D005DF26A /* DailyTask250103.storyboard */; };
+		9EEADF412D2D5D3D005DF26A /* EmotionDiary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF232D2D5D3D005DF26A /* EmotionDiary.storyboard */; };
+		9EEADF422D2D5D3D005DF26A /* AutoLayoutNetfilx.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF002D2D5D3D005DF26A /* AutoLayoutNetfilx.storyboard */; };
+		9EEADF432D2D5D3D005DF26A /* BMICalculator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADEF92D2D5D3D005DF26A /* BMICalculator.storyboard */; };
+		9EEADF452D2D5D3D005DF26A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF2C2D2D5D3D005DF26A /* Main.storyboard */; };
+		9EEADF472D2D5D3D005DF26A /* MainHomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF2D2D2D5D3D005DF26A /* MainHomeTabViewController.swift */; };
+		9EEADF482D2D5D3D005DF26A /* MainNewHotTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF2E2D2D5D3D005DF26A /* MainNewHotTabViewController.swift */; };
+		9EEADF492D2D5D3D005DF26A /* BMICalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADEFA2D2D5D3D005DF26A /* BMICalculatorViewController.swift */; };
+		9EEADF4A2D2D5D3D005DF26A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF272D2D5D3D005DF26A /* UIImageView+Extension.swift */; };
+		9EEADF4B2D2D5D3D005DF26A /* ShoppingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF112D2D5D3D005DF26A /* ShoppingTableViewCell.swift */; };
+		9EEADF4C2D2D5D3D005DF26A /* EmotionDiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF242D2D5D3D005DF26A /* EmotionDiaryViewController.swift */; };
+		9EEADF4D2D2D5D3D005DF26A /* TravelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF172D2D5D3D005DF26A /* TravelModel.swift */; };
+		9EEADF4F2D2D5D3D005DF26A /* TamagotchiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF052D2D5D3D005DF26A /* TamagotchiUtil.swift */; };
+		9EEADF502D2D5D3D005DF26A /* AutoLayoutNaverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADEFF2D2D5D3D005DF26A /* AutoLayoutNaverViewController.swift */; };
+		9EEADF512D2D5D3D005DF26A /* TravelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF182D2D5D3D005DF26A /* TravelTableViewCell.swift */; };
+		9EEADF522D2D5D3D005DF26A /* ShoppingToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF142D2D5D3D005DF26A /* ShoppingToDoModel.swift */; };
+		9EEADF532D2D5D3D005DF26A /* TravelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF192D2D5D3D005DF26A /* TravelTableViewController.swift */; };
+		9EEADF542D2D5D3D005DF26A /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF162D2D5D3D005DF26A /* AdTableViewCell.swift */; };
+		9EEADF562D2D5D3D005DF26A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF292D2D5D3D005DF26A /* UIView+Extension.swift */; };
+		9EEADF572D2D5D3D005DF26A /* Case2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF092D2D5D3D005DF26A /* Case2TableViewController.swift */; };
+		9EEADF582D2D5D3D005DF26A /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF262D2D5D3D005DF26A /* UIButton+Extension.swift */; };
+		9EEADF592D2D5D3D005DF26A /* NicknameSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF032D2D5D3D005DF26A /* NicknameSettingViewController.swift */; };
+		9EEADF5A2D2D5D3D005DF26A /* AutoLayoutNetfilxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF012D2D5D3D005DF26A /* AutoLayoutNetfilxViewController.swift */; };
+		9EEADF5B2D2D5D3D005DF26A /* DailyTask2ndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF352D2D5D3D005DF26A /* DailyTask2ndViewController.swift */; };
+		9EEADF5C2D2D5D3D005DF26A /* MagazineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF0E2D2D5D3D005DF26A /* MagazineTableViewCell.swift */; };
+		9EEADF5D2D2D5D3D005DF26A /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF282D2D5D3D005DF26A /* UILabel+Extension.swift */; };
+		9EEADF5E2D2D5D3D005DF26A /* AutoLayoutKakaotalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADEFD2D2D5D3D005DF26A /* AutoLayoutKakaotalkViewController.swift */; };
+		9EEADF5F2D2D5D3D005DF26A /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF122D2D5D3D005DF26A /* ShoppingTableViewController.swift */; };
+		9EEADF602D2D5D3D005DF26A /* Case3TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF0A2D2D5D3D005DF26A /* Case3TableViewController.swift */; };
+		9EEADF612D2D5D3D005DF26A /* MagazineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF0F2D2D5D3D005DF26A /* MagazineTableViewController.swift */; };
+		9EEADF622D2D5D3D005DF26A /* MagazineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF0D2D2D5D3D005DF26A /* MagazineModel.swift */; };
+		9EEADF632D2D5D3D005DF26A /* TamagotchiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF062D2D5D3D005DF26A /* TamagotchiViewController.swift */; };
+		9EEADF642D2D5D3D005DF26A /* NeologismFinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF322D2D5D3D005DF26A /* NeologismFinderViewController.swift */; };
+		9EEADF652D2D5D3D005DF26A /* ShoppingTableViewHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF132D2D5D3D005DF26A /* ShoppingTableViewHeaderCell.swift */; };
+		9EEADF662D2D5D3D005DF26A /* MainSaveContentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF2F2D2D5D3D005DF26A /* MainSaveContentsListViewController.swift */; };
+		9EEADF692D2D5D8E005DF26A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9EEADF682D2D5D8E005DF26A /* Kingfisher */; };
+		9EEADF712D2D5FD0005DF26A /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF6C2D2D5FD0005DF26A /* CityTableViewCell.swift */; };
+		9EEADF722D2D5FD0005DF26A /* CityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF6E2D2D5FD0005DF26A /* CityTableViewController.swift */; };
+		9EEADF732D2D5FD0005DF26A /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF6B2D2D5FD0005DF26A /* CityModel.swift */; };
+		9EEADF742D2D5FD0005DF26A /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF6D2D2D5FD0005DF26A /* CityTableViewCell.xib */; };
+		9EEADF752D2D5FD0005DF26A /* DailyTask250106.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF6F2D2D5FD0005DF26A /* DailyTask250106.storyboard */; };
+		9EEADF772D2D698D005DF26A /* TopCitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF762D2D698D005DF26A /* TopCitiesViewController.swift */; };
+		9EEADF792D2D6D4A005DF26A /* TouristPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF782D2D6D4A005DF26A /* TouristPlaceViewController.swift */; };
+		9EEADF7B2D2D715D005DF26A /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF7A2D2D715D005DF26A /* AdViewController.swift */; };
+		9EEADF7E2D2D7D46005DF26A /* TopCitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADF7C2D2D7D46005DF26A /* TopCitiesCollectionViewCell.swift */; };
+		9EEADF7F2D2D7D46005DF26A /* TopCitiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADF7D2D2D7D46005DF26A /* TopCitiesCollectionViewCell.xib */; };
+		9EEADFA52D2E5D81005DF26A /* JustClap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADFA42D2E5D81005DF26A /* JustClap.storyboard */; };
+		9EEADFA72D2E5D97005DF26A /* JustClapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADFA62D2E5D97005DF26A /* JustClapViewController.swift */; };
+		9EEADFA92D2E753A005DF26A /* Restaurant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EEADFA82D2E753A005DF26A /* Restaurant.storyboard */; };
+		9EEADFAB2D2E754C005DF26A /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADFAA2D2E754C005DF26A /* RestaurantViewController.swift */; };
+		9EEADFAF2D2E764D005DF26A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADFAE2D2E764D005DF26A /* Restaurant.swift */; };
+		9EEADFB22D2E795B005DF26A /* UIAlert+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEADFB12D2E795B005DF26A /* UIAlert+.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9EBB059C2D2FA84F002C52D6 /* UpDownGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UpDownGame.storyboard; sourceTree = "<group>"; };
+		9EBB059E2D2FA864002C52D6 /* UpDownGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpDownGameViewController.swift; sourceTree = "<group>"; };
+		9EBB05A02D2FA9DB002C52D6 /* GameWaitingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWaitingViewController.swift; sourceTree = "<group>"; };
+		9EBB05A22D2FAB25002C52D6 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		9EBB05A42D2FB979002C52D6 /* GameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewCell.swift; sourceTree = "<group>"; };
+		9EBB05A52D2FB979002C52D6 /* GameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameCollectionViewCell.xib; sourceTree = "<group>"; };
+		9EBB061A2D3298C8002C52D6 /* Chatting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chatting.storyboard; sourceTree = "<group>"; };
+		9EBB061C2D3298F1002C52D6 /* TravelTalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkViewController.swift; sourceTree = "<group>"; };
+		9EBB061E2D329901002C52D6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		9EBB06232D32A83D002C52D6 /* ChattingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
+		9EBB06252D32B0F2002C52D6 /* TravelTalkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTalkCollectionViewCell.swift; sourceTree = "<group>"; };
+		9EBB06262D32B0F2002C52D6 /* TravelTalkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TravelTalkCollectionViewCell.xib; sourceTree = "<group>"; };
+		9EBB06292D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTravelTalkCollectionViewCell.swift; sourceTree = "<group>"; };
+		9EBB062A2D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupTravelTalkCollectionViewCell.xib; sourceTree = "<group>"; };
+		9EBB062F2D32C211002C52D6 /* DateFormatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
+		9EBB06592D339CAE002C52D6 /* OtherChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherChatTableViewCell.swift; sourceTree = "<group>"; };
+		9EBB065A2D339CAE002C52D6 /* OtherChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherChatTableViewCell.xib; sourceTree = "<group>"; };
+		9EBB067F2D33A7D2002C52D6 /* MyChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatTableViewCell.swift; sourceTree = "<group>"; };
+		9EBB06802D33A7D2002C52D6 /* MyChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChatTableViewCell.xib; sourceTree = "<group>"; };
+		9EBB06832D33DE40002C52D6 /* DateLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLineTableViewCell.swift; sourceTree = "<group>"; };
+		9EBB06842D33DE40002C52D6 /* DateLineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateLineTableViewCell.xib; sourceTree = "<group>"; };
+		9EEADEC52D2D5CEE005DF26A /* DailyTask_week3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyTask_week3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEADEDF2D2D5CFA005DF26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EEADEEE2D2D5D0B005DF26A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EEADEF02D2D5D0B005DF26A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9EEADEF52D2D5D3D005DF26A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EEADEF62D2D5D3D005DF26A /* Base 2 */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Base 2"; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EEADEF92D2D5D3D005DF26A /* BMICalculator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BMICalculator.storyboard; sourceTree = "<group>"; };
+		9EEADEFA2D2D5D3D005DF26A /* BMICalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorViewController.swift; sourceTree = "<group>"; };
+		9EEADEFC2D2D5D3D005DF26A /* AutoLayoutKakaotalk.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutKakaotalk.storyboard; sourceTree = "<group>"; };
+		9EEADEFD2D2D5D3D005DF26A /* AutoLayoutKakaotalkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutKakaotalkViewController.swift; sourceTree = "<group>"; };
+		9EEADEFE2D2D5D3D005DF26A /* AutoLayoutNaver.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutNaver.storyboard; sourceTree = "<group>"; };
+		9EEADEFF2D2D5D3D005DF26A /* AutoLayoutNaverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutNaverViewController.swift; sourceTree = "<group>"; };
+		9EEADF002D2D5D3D005DF26A /* AutoLayoutNetfilx.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutNetfilx.storyboard; sourceTree = "<group>"; };
+		9EEADF012D2D5D3D005DF26A /* AutoLayoutNetfilxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutNetfilxViewController.swift; sourceTree = "<group>"; };
+		9EEADF032D2D5D3D005DF26A /* NicknameSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameSettingViewController.swift; sourceTree = "<group>"; };
+		9EEADF042D2D5D3D005DF26A /* Tamagotchi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tamagotchi.storyboard; sourceTree = "<group>"; };
+		9EEADF052D2D5D3D005DF26A /* TamagotchiUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagotchiUtil.swift; sourceTree = "<group>"; };
+		9EEADF062D2D5D3D005DF26A /* TamagotchiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamagotchiViewController.swift; sourceTree = "<group>"; };
+		9EEADF092D2D5D3D005DF26A /* Case2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case2TableViewController.swift; sourceTree = "<group>"; };
+		9EEADF0A2D2D5D3D005DF26A /* Case3TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case3TableViewController.swift; sourceTree = "<group>"; };
+		9EEADF0B2D2D5D3D005DF26A /* DailyTask250102.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyTask250102.storyboard; sourceTree = "<group>"; };
+		9EEADF0D2D2D5D3D005DF26A /* MagazineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineModel.swift; sourceTree = "<group>"; };
+		9EEADF0E2D2D5D3D005DF26A /* MagazineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineTableViewCell.swift; sourceTree = "<group>"; };
+		9EEADF0F2D2D5D3D005DF26A /* MagazineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineTableViewController.swift; sourceTree = "<group>"; };
+		9EEADF112D2D5D3D005DF26A /* ShoppingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewCell.swift; sourceTree = "<group>"; };
+		9EEADF122D2D5D3D005DF26A /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
+		9EEADF132D2D5D3D005DF26A /* ShoppingTableViewHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewHeaderCell.swift; sourceTree = "<group>"; };
+		9EEADF142D2D5D3D005DF26A /* ShoppingToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingToDoModel.swift; sourceTree = "<group>"; };
+		9EEADF162D2D5D3D005DF26A /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewCell.swift; sourceTree = "<group>"; };
+		9EEADF172D2D5D3D005DF26A /* TravelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelModel.swift; sourceTree = "<group>"; };
+		9EEADF182D2D5D3D005DF26A /* TravelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewCell.swift; sourceTree = "<group>"; };
+		9EEADF192D2D5D3D005DF26A /* TravelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelTableViewController.swift; sourceTree = "<group>"; };
+		9EEADF1B2D2D5D3D005DF26A /* DailyTask250103.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyTask250103.storyboard; sourceTree = "<group>"; };
+		9EEADF232D2D5D3D005DF26A /* EmotionDiary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmotionDiary.storyboard; sourceTree = "<group>"; };
+		9EEADF242D2D5D3D005DF26A /* EmotionDiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDiaryViewController.swift; sourceTree = "<group>"; };
+		9EEADF262D2D5D3D005DF26A /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		9EEADF272D2D5D3D005DF26A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		9EEADF282D2D5D3D005DF26A /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		9EEADF292D2D5D3D005DF26A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9EEADF2B2D2D5D3D005DF26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EEADF2D2D2D5D3D005DF26A /* MainHomeTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeTabViewController.swift; sourceTree = "<group>"; };
+		9EEADF2E2D2D5D3D005DF26A /* MainNewHotTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNewHotTabViewController.swift; sourceTree = "<group>"; };
+		9EEADF2F2D2D5D3D005DF26A /* MainSaveContentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSaveContentsListViewController.swift; sourceTree = "<group>"; };
+		9EEADF312D2D5D3D005DF26A /* NeologismFinder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NeologismFinder.storyboard; sourceTree = "<group>"; };
+		9EEADF322D2D5D3D005DF26A /* NeologismFinderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeologismFinderViewController.swift; sourceTree = "<group>"; };
+		9EEADF342D2D5D3D005DF26A /* DailyTask 2nd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "DailyTask 2nd.storyboard"; sourceTree = "<group>"; };
+		9EEADF352D2D5D3D005DF26A /* DailyTask2ndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTask2ndViewController.swift; sourceTree = "<group>"; };
+		9EEADF6B2D2D5FD0005DF26A /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		9EEADF6C2D2D5FD0005DF26A /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		9EEADF6D2D2D5FD0005DF26A /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		9EEADF6E2D2D5FD0005DF26A /* CityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewController.swift; sourceTree = "<group>"; };
+		9EEADF6F2D2D5FD0005DF26A /* DailyTask250106.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DailyTask250106.storyboard; sourceTree = "<group>"; };
+		9EEADF762D2D698D005DF26A /* TopCitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCitiesViewController.swift; sourceTree = "<group>"; };
+		9EEADF782D2D6D4A005DF26A /* TouristPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristPlaceViewController.swift; sourceTree = "<group>"; };
+		9EEADF7A2D2D715D005DF26A /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
+		9EEADF7C2D2D7D46005DF26A /* TopCitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCitiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		9EEADF7D2D2D7D46005DF26A /* TopCitiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopCitiesCollectionViewCell.xib; sourceTree = "<group>"; };
+		9EEADFA42D2E5D81005DF26A /* JustClap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JustClap.storyboard; sourceTree = "<group>"; };
+		9EEADFA62D2E5D97005DF26A /* JustClapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustClapViewController.swift; sourceTree = "<group>"; };
+		9EEADFA82D2E753A005DF26A /* Restaurant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurant.storyboard; sourceTree = "<group>"; };
+		9EEADFAA2D2E754C005DF26A /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		9EEADFAE2D2E764D005DF26A /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		9EEADFB12D2E795B005DF26A /* UIAlert+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlert+.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EEADEC22D2D5CEE005DF26A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEADF692D2D5D8E005DF26A /* Kingfisher in Frameworks */,
+				9EBB05DA2D2FDD98002C52D6 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EBB059B2D2FA835002C52D6 /* DailyTask250109 */ = {
+			isa = PBXGroup;
+			children = (
+				9EBB059C2D2FA84F002C52D6 /* UpDownGame.storyboard */,
+				9EBB05A02D2FA9DB002C52D6 /* GameWaitingViewController.swift */,
+				9EBB059E2D2FA864002C52D6 /* UpDownGameViewController.swift */,
+				9EBB05A42D2FB979002C52D6 /* GameCollectionViewCell.swift */,
+				9EBB05A52D2FB979002C52D6 /* GameCollectionViewCell.xib */,
+			);
+			path = DailyTask250109;
+			sourceTree = "<group>";
+		};
+		9EBB06192D329892002C52D6 /* DailyTask250110 */ = {
+			isa = PBXGroup;
+			children = (
+				9EBB061A2D3298C8002C52D6 /* Chatting.storyboard */,
+				9EBB062D2D32B8B7002C52D6 /* TravelTalk */,
+				9EBB062E2D32B8DA002C52D6 /* Chat */,
+				9EBB06222D32A816002C52D6 /* Model */,
+			);
+			path = DailyTask250110;
+			sourceTree = "<group>";
+		};
+		9EBB06222D32A816002C52D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EBB06232D32A83D002C52D6 /* ChattingData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EBB062D2D32B8B7002C52D6 /* TravelTalk */ = {
+			isa = PBXGroup;
+			children = (
+				9EBB061C2D3298F1002C52D6 /* TravelTalkViewController.swift */,
+				9EBB06252D32B0F2002C52D6 /* TravelTalkCollectionViewCell.swift */,
+				9EBB06262D32B0F2002C52D6 /* TravelTalkCollectionViewCell.xib */,
+				9EBB06292D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.swift */,
+				9EBB062A2D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.xib */,
+			);
+			path = TravelTalk;
+			sourceTree = "<group>";
+		};
+		9EBB062E2D32B8DA002C52D6 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				9EBB061E2D329901002C52D6 /* ChatViewController.swift */,
+				9EBB06592D339CAE002C52D6 /* OtherChatTableViewCell.swift */,
+				9EBB065A2D339CAE002C52D6 /* OtherChatTableViewCell.xib */,
+				9EBB067F2D33A7D2002C52D6 /* MyChatTableViewCell.swift */,
+				9EBB06802D33A7D2002C52D6 /* MyChatTableViewCell.xib */,
+				9EBB06832D33DE40002C52D6 /* DateLineTableViewCell.swift */,
+				9EBB06842D33DE40002C52D6 /* DateLineTableViewCell.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		9EEADEBC2D2D5CEE005DF26A = {
+			isa = PBXGroup;
+			children = (
+				9EEADEE62D2D5CFA005DF26A /* DailyTask_week3 */,
+				9EEADEC62D2D5CEE005DF26A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EEADEC62D2D5CEE005DF26A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADEC52D2D5CEE005DF26A /* DailyTask_week3.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EEADEE62D2D5CFA005DF26A /* DailyTask_week3 */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF6A2D2D5DFA005DF26A /* PreviousDailyTasks */,
+				9EEADEF12D2D5D0B005DF26A /* Application */,
+				9EEADEF82D2D5D3D005DF26A /* Base 2.lproj */,
+				9EEADF082D2D5D3D005DF26A /* DailyTask241231 */,
+				9EEADF0C2D2D5D3D005DF26A /* DailyTask250102 */,
+				9EEADF1C2D2D5D3D005DF26A /* DailyTask250103,250107 */,
+				9EEADF702D2D5FD0005DF26A /* DailyTask250106,250107 */,
+				9EEADFA12D2E5D01005DF26A /* DailyTask250108 */,
+				9EBB059B2D2FA835002C52D6 /* DailyTask250109 */,
+				9EBB06192D329892002C52D6 /* DailyTask250110 */,
+				9EEADFB02D2E793E005DF26A /* Util */,
+				9EEADF2A2D2D5D3D005DF26A /* Extension */,
+				9EEADEF52D2D5D3D005DF26A /* Assets.xcassets */,
+			);
+			path = DailyTask_week3;
+			sourceTree = "<group>";
+		};
+		9EEADEF12D2D5D0B005DF26A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADEEE2D2D5D0B005DF26A /* AppDelegate.swift */,
+				9EEADEF02D2D5D0B005DF26A /* SceneDelegate.swift */,
+				9EEADEDF2D2D5CFA005DF26A /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9EEADEF82D2D5D3D005DF26A /* Base 2.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADEF72D2D5D3D005DF26A /* LaunchScreen.storyboard */,
+			);
+			path = "Base 2.lproj";
+			sourceTree = "<group>";
+		};
+		9EEADEFB2D2D5D3D005DF26A /* BMICalculator */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADEF92D2D5D3D005DF26A /* BMICalculator.storyboard */,
+				9EEADEFA2D2D5D3D005DF26A /* BMICalculatorViewController.swift */,
+			);
+			path = BMICalculator;
+			sourceTree = "<group>";
+		};
+		9EEADF022D2D5D3D005DF26A /* AutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADEFC2D2D5D3D005DF26A /* AutoLayoutKakaotalk.storyboard */,
+				9EEADEFD2D2D5D3D005DF26A /* AutoLayoutKakaotalkViewController.swift */,
+				9EEADEFE2D2D5D3D005DF26A /* AutoLayoutNaver.storyboard */,
+				9EEADEFF2D2D5D3D005DF26A /* AutoLayoutNaverViewController.swift */,
+				9EEADF002D2D5D3D005DF26A /* AutoLayoutNetfilx.storyboard */,
+				9EEADF012D2D5D3D005DF26A /* AutoLayoutNetfilxViewController.swift */,
+			);
+			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		9EEADF072D2D5D3D005DF26A /* Tamagotchi */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF032D2D5D3D005DF26A /* NicknameSettingViewController.swift */,
+				9EEADF042D2D5D3D005DF26A /* Tamagotchi.storyboard */,
+				9EEADF052D2D5D3D005DF26A /* TamagotchiUtil.swift */,
+				9EEADF062D2D5D3D005DF26A /* TamagotchiViewController.swift */,
+			);
+			path = Tamagotchi;
+			sourceTree = "<group>";
+		};
+		9EEADF082D2D5D3D005DF26A /* DailyTask241231 */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF022D2D5D3D005DF26A /* AutoLayout */,
+				9EEADF072D2D5D3D005DF26A /* Tamagotchi */,
+			);
+			path = DailyTask241231;
+			sourceTree = "<group>";
+		};
+		9EEADF0C2D2D5D3D005DF26A /* DailyTask250102 */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF092D2D5D3D005DF26A /* Case2TableViewController.swift */,
+				9EEADF0A2D2D5D3D005DF26A /* Case3TableViewController.swift */,
+				9EEADF0B2D2D5D3D005DF26A /* DailyTask250102.storyboard */,
+			);
+			path = DailyTask250102;
+			sourceTree = "<group>";
+		};
+		9EEADF102D2D5D3D005DF26A /* MagazineTap */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF0D2D2D5D3D005DF26A /* MagazineModel.swift */,
+				9EEADF0E2D2D5D3D005DF26A /* MagazineTableViewCell.swift */,
+				9EEADF0F2D2D5D3D005DF26A /* MagazineTableViewController.swift */,
+			);
+			path = MagazineTap;
+			sourceTree = "<group>";
+		};
+		9EEADF152D2D5D3D005DF26A /* ShoppingTap */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF112D2D5D3D005DF26A /* ShoppingTableViewCell.swift */,
+				9EEADF122D2D5D3D005DF26A /* ShoppingTableViewController.swift */,
+				9EEADF132D2D5D3D005DF26A /* ShoppingTableViewHeaderCell.swift */,
+				9EEADF142D2D5D3D005DF26A /* ShoppingToDoModel.swift */,
+			);
+			path = ShoppingTap;
+			sourceTree = "<group>";
+		};
+		9EEADF1A2D2D5D3D005DF26A /* TravelTap */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF162D2D5D3D005DF26A /* AdTableViewCell.swift */,
+				9EEADF172D2D5D3D005DF26A /* TravelModel.swift */,
+				9EEADF182D2D5D3D005DF26A /* TravelTableViewCell.swift */,
+				9EEADF192D2D5D3D005DF26A /* TravelTableViewController.swift */,
+				9EEADF762D2D698D005DF26A /* TopCitiesViewController.swift */,
+				9EEADF782D2D6D4A005DF26A /* TouristPlaceViewController.swift */,
+				9EEADF7A2D2D715D005DF26A /* AdViewController.swift */,
+				9EEADF7C2D2D7D46005DF26A /* TopCitiesCollectionViewCell.swift */,
+				9EEADF7D2D2D7D46005DF26A /* TopCitiesCollectionViewCell.xib */,
+			);
+			path = TravelTap;
+			sourceTree = "<group>";
+		};
+		9EEADF1C2D2D5D3D005DF26A /* DailyTask250103,250107 */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF102D2D5D3D005DF26A /* MagazineTap */,
+				9EEADF152D2D5D3D005DF26A /* ShoppingTap */,
+				9EEADF1A2D2D5D3D005DF26A /* TravelTap */,
+				9EEADF1B2D2D5D3D005DF26A /* DailyTask250103.storyboard */,
+			);
+			path = "DailyTask250103,250107";
+			sourceTree = "<group>";
+		};
+		9EEADF252D2D5D3D005DF26A /* EmotionDiary */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF232D2D5D3D005DF26A /* EmotionDiary.storyboard */,
+				9EEADF242D2D5D3D005DF26A /* EmotionDiaryViewController.swift */,
+			);
+			path = EmotionDiary;
+			sourceTree = "<group>";
+		};
+		9EEADF2A2D2D5D3D005DF26A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF262D2D5D3D005DF26A /* UIButton+Extension.swift */,
+				9EEADF272D2D5D3D005DF26A /* UIImageView+Extension.swift */,
+				9EEADF282D2D5D3D005DF26A /* UILabel+Extension.swift */,
+				9EEADF292D2D5D3D005DF26A /* UIView+Extension.swift */,
+				9EBB05A22D2FAB25002C52D6 /* UITextField+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9EEADF302D2D5D3D005DF26A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF2C2D2D5D3D005DF26A /* Main.storyboard */,
+				9EEADF2D2D2D5D3D005DF26A /* MainHomeTabViewController.swift */,
+				9EEADF2E2D2D5D3D005DF26A /* MainNewHotTabViewController.swift */,
+				9EEADF2F2D2D5D3D005DF26A /* MainSaveContentsListViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9EEADF332D2D5D3D005DF26A /* NeologismFinder */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF312D2D5D3D005DF26A /* NeologismFinder.storyboard */,
+				9EEADF322D2D5D3D005DF26A /* NeologismFinderViewController.swift */,
+			);
+			path = NeologismFinder;
+			sourceTree = "<group>";
+		};
+		9EEADF362D2D5D3D005DF26A /* Netflix */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF342D2D5D3D005DF26A /* DailyTask 2nd.storyboard */,
+				9EEADF352D2D5D3D005DF26A /* DailyTask2ndViewController.swift */,
+			);
+			path = Netflix;
+			sourceTree = "<group>";
+		};
+		9EEADF6A2D2D5DFA005DF26A /* PreviousDailyTasks */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADEFB2D2D5D3D005DF26A /* BMICalculator */,
+				9EEADF252D2D5D3D005DF26A /* EmotionDiary */,
+				9EEADF332D2D5D3D005DF26A /* NeologismFinder */,
+				9EEADF362D2D5D3D005DF26A /* Netflix */,
+				9EEADF302D2D5D3D005DF26A /* Main */,
+			);
+			path = PreviousDailyTasks;
+			sourceTree = "<group>";
+		};
+		9EEADF702D2D5FD0005DF26A /* DailyTask250106,250107 */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADF6B2D2D5FD0005DF26A /* CityModel.swift */,
+				9EEADF6C2D2D5FD0005DF26A /* CityTableViewCell.swift */,
+				9EEADF6D2D2D5FD0005DF26A /* CityTableViewCell.xib */,
+				9EEADF6E2D2D5FD0005DF26A /* CityTableViewController.swift */,
+				9EEADF6F2D2D5FD0005DF26A /* DailyTask250106.storyboard */,
+			);
+			path = "DailyTask250106,250107";
+			sourceTree = "<group>";
+		};
+		9EEADFA12D2E5D01005DF26A /* DailyTask250108 */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADFA42D2E5D81005DF26A /* JustClap.storyboard */,
+				9EEADFA62D2E5D97005DF26A /* JustClapViewController.swift */,
+				9EEADFA82D2E753A005DF26A /* Restaurant.storyboard */,
+				9EEADFAA2D2E754C005DF26A /* RestaurantViewController.swift */,
+				9EEADFAE2D2E764D005DF26A /* Restaurant.swift */,
+			);
+			path = DailyTask250108;
+			sourceTree = "<group>";
+		};
+		9EEADFB02D2E793E005DF26A /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9EEADFB12D2E795B005DF26A /* UIAlert+.swift */,
+				9EBB062F2D32C211002C52D6 /* DateFormatter+.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EEADEC42D2D5CEE005DF26A /* DailyTask_week3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EEADED82D2D5CF0005DF26A /* Build configuration list for PBXNativeTarget "DailyTask_week3" */;
+			buildPhases = (
+				9EEADEC12D2D5CEE005DF26A /* Sources */,
+				9EEADEC22D2D5CEE005DF26A /* Frameworks */,
+				9EEADEC32D2D5CEE005DF26A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyTask_week3;
+			packageProductDependencies = (
+				9EEADF682D2D5D8E005DF26A /* Kingfisher */,
+				9EBB05D92D2FDD98002C52D6 /* SnapKit */,
+			);
+			productName = DailyTask_week3;
+			productReference = 9EEADEC52D2D5CEE005DF26A /* DailyTask_week3.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EEADEBD2D2D5CEE005DF26A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					9EEADEC42D2D5CEE005DF26A = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 9EEADEC02D2D5CEE005DF26A /* Build configuration list for PBXProject "DailyTask_week3" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"Base 2",
+				"base 2",
+			);
+			mainGroup = 9EEADEBC2D2D5CEE005DF26A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9EEADF672D2D5D8E005DF26A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9EBB05D82D2FDD98002C52D6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9EEADEC62D2D5CEE005DF26A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EEADEC42D2D5CEE005DF26A /* DailyTask_week3 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EEADEC32D2D5CEE005DF26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEADF372D2D5D3D005DF26A /* DailyTask250102.storyboard in Resources */,
+				9EEADF382D2D5D3D005DF26A /* AutoLayoutNaver.storyboard in Resources */,
+				9EBB06282D32B0F2002C52D6 /* TravelTalkCollectionViewCell.xib in Resources */,
+				9EBB06812D33A7D2002C52D6 /* MyChatTableViewCell.xib in Resources */,
+				9EEADF392D2D5D3D005DF26A /* AutoLayoutKakaotalk.storyboard in Resources */,
+				9EEADF3A2D2D5D3D005DF26A /* DailyTask 2nd.storyboard in Resources */,
+				9EEADF3C2D2D5D3D005DF26A /* Assets.xcassets in Resources */,
+				9EEADF742D2D5FD0005DF26A /* CityTableViewCell.xib in Resources */,
+				9EEADF752D2D5FD0005DF26A /* DailyTask250106.storyboard in Resources */,
+				9EBB065B2D339CAE002C52D6 /* OtherChatTableViewCell.xib in Resources */,
+				9EEADF3D2D2D5D3D005DF26A /* LaunchScreen.storyboard in Resources */,
+				9EEADF3E2D2D5D3D005DF26A /* Tamagotchi.storyboard in Resources */,
+				9EBB059D2D2FA84F002C52D6 /* UpDownGame.storyboard in Resources */,
+				9EEADF3F2D2D5D3D005DF26A /* NeologismFinder.storyboard in Resources */,
+				9EEADF402D2D5D3D005DF26A /* DailyTask250103.storyboard in Resources */,
+				9EBB061B2D3298C8002C52D6 /* Chatting.storyboard in Resources */,
+				9EEADFA92D2E753A005DF26A /* Restaurant.storyboard in Resources */,
+				9EEADF7F2D2D7D46005DF26A /* TopCitiesCollectionViewCell.xib in Resources */,
+				9EBB062C2D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.xib in Resources */,
+				9EEADF412D2D5D3D005DF26A /* EmotionDiary.storyboard in Resources */,
+				9EEADF422D2D5D3D005DF26A /* AutoLayoutNetfilx.storyboard in Resources */,
+				9EBB05A72D2FB979002C52D6 /* GameCollectionViewCell.xib in Resources */,
+				9EEADFA52D2E5D81005DF26A /* JustClap.storyboard in Resources */,
+				9EBB06852D33DE40002C52D6 /* DateLineTableViewCell.xib in Resources */,
+				9EEADF432D2D5D3D005DF26A /* BMICalculator.storyboard in Resources */,
+				9EEADF452D2D5D3D005DF26A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EEADEC12D2D5CEE005DF26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEADF472D2D5D3D005DF26A /* MainHomeTabViewController.swift in Sources */,
+				9EEADF482D2D5D3D005DF26A /* MainNewHotTabViewController.swift in Sources */,
+				9EBB061D2D3298F1002C52D6 /* TravelTalkViewController.swift in Sources */,
+				9EBB061F2D329901002C52D6 /* ChatViewController.swift in Sources */,
+				9EEADF492D2D5D3D005DF26A /* BMICalculatorViewController.swift in Sources */,
+				9EEADF4A2D2D5D3D005DF26A /* UIImageView+Extension.swift in Sources */,
+				9EBB06272D32B0F2002C52D6 /* TravelTalkCollectionViewCell.swift in Sources */,
+				9EEADF4B2D2D5D3D005DF26A /* ShoppingTableViewCell.swift in Sources */,
+				9EBB065C2D339CAE002C52D6 /* OtherChatTableViewCell.swift in Sources */,
+				9EEADF4C2D2D5D3D005DF26A /* EmotionDiaryViewController.swift in Sources */,
+				9EEADF4D2D2D5D3D005DF26A /* TravelModel.swift in Sources */,
+				9EEADF4F2D2D5D3D005DF26A /* TamagotchiUtil.swift in Sources */,
+				9EEADF502D2D5D3D005DF26A /* AutoLayoutNaverViewController.swift in Sources */,
+				9EEADF512D2D5D3D005DF26A /* TravelTableViewCell.swift in Sources */,
+				9EEADF792D2D6D4A005DF26A /* TouristPlaceViewController.swift in Sources */,
+				9EBB06242D32A83D002C52D6 /* ChattingData.swift in Sources */,
+				9EEADF522D2D5D3D005DF26A /* ShoppingToDoModel.swift in Sources */,
+				9EBB05A62D2FB979002C52D6 /* GameCollectionViewCell.swift in Sources */,
+				9EEADF772D2D698D005DF26A /* TopCitiesViewController.swift in Sources */,
+				9EEADF7E2D2D7D46005DF26A /* TopCitiesCollectionViewCell.swift in Sources */,
+				9EEADF532D2D5D3D005DF26A /* TravelTableViewController.swift in Sources */,
+				9EEADF542D2D5D3D005DF26A /* AdTableViewCell.swift in Sources */,
+				9EEADF7B2D2D715D005DF26A /* AdViewController.swift in Sources */,
+				9EEADF562D2D5D3D005DF26A /* UIView+Extension.swift in Sources */,
+				9EEADF572D2D5D3D005DF26A /* Case2TableViewController.swift in Sources */,
+				9EBB05A32D2FAB25002C52D6 /* UITextField+Extension.swift in Sources */,
+				9EBB059F2D2FA864002C52D6 /* UpDownGameViewController.swift in Sources */,
+				9EBB06302D32C211002C52D6 /* DateFormatter+.swift in Sources */,
+				9EEADF582D2D5D3D005DF26A /* UIButton+Extension.swift in Sources */,
+				9EEADF592D2D5D3D005DF26A /* NicknameSettingViewController.swift in Sources */,
+				9EEADF5A2D2D5D3D005DF26A /* AutoLayoutNetfilxViewController.swift in Sources */,
+				9EEADF5B2D2D5D3D005DF26A /* DailyTask2ndViewController.swift in Sources */,
+				9EEADF5C2D2D5D3D005DF26A /* MagazineTableViewCell.swift in Sources */,
+				9EEADF712D2D5FD0005DF26A /* CityTableViewCell.swift in Sources */,
+				9EEADF722D2D5FD0005DF26A /* CityTableViewController.swift in Sources */,
+				9EBB05A12D2FA9DB002C52D6 /* GameWaitingViewController.swift in Sources */,
+				9EEADF732D2D5FD0005DF26A /* CityModel.swift in Sources */,
+				9EEADF5D2D2D5D3D005DF26A /* UILabel+Extension.swift in Sources */,
+				9EEADF5E2D2D5D3D005DF26A /* AutoLayoutKakaotalkViewController.swift in Sources */,
+				9EEADF5F2D2D5D3D005DF26A /* ShoppingTableViewController.swift in Sources */,
+				9EEADF602D2D5D3D005DF26A /* Case3TableViewController.swift in Sources */,
+				9EEADF612D2D5D3D005DF26A /* MagazineTableViewController.swift in Sources */,
+				9EEADF622D2D5D3D005DF26A /* MagazineModel.swift in Sources */,
+				9EEADF632D2D5D3D005DF26A /* TamagotchiViewController.swift in Sources */,
+				9EBB06822D33A7D2002C52D6 /* MyChatTableViewCell.swift in Sources */,
+				9EEADF642D2D5D3D005DF26A /* NeologismFinderViewController.swift in Sources */,
+				9EEADF652D2D5D3D005DF26A /* ShoppingTableViewHeaderCell.swift in Sources */,
+				9EBB062B2D32B8AF002C52D6 /* GroupTravelTalkCollectionViewCell.swift in Sources */,
+				9EEADFA72D2E5D97005DF26A /* JustClapViewController.swift in Sources */,
+				9EEADFAB2D2E754C005DF26A /* RestaurantViewController.swift in Sources */,
+				9EEADFAF2D2E764D005DF26A /* Restaurant.swift in Sources */,
+				9EEADF662D2D5D3D005DF26A /* MainSaveContentsListViewController.swift in Sources */,
+				9EEADEF22D2D5D0B005DF26A /* SceneDelegate.swift in Sources */,
+				9EEADEF32D2D5D0B005DF26A /* AppDelegate.swift in Sources */,
+				9EEADFB22D2E795B005DF26A /* UIAlert+.swift in Sources */,
+				9EBB06862D33DE40002C52D6 /* DateLineTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9EEADEF72D2D5D3D005DF26A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EEADEF62D2D5D3D005DF26A /* Base 2 */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9EEADF2C2D2D5D3D005DF26A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EEADF2B2D2D5D3D005DF26A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EEADED92D2D5CF0005DF26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A95XXD5WT7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyTask_week3/Application/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.psy.DailyTask-week3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EEADEDA2D2D5CF0005DF26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A95XXD5WT7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyTask_week3/Application/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.psy.DailyTask-week3";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EEADEDB2D2D5CF0005DF26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EEADEDC2D2D5CF0005DF26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EEADEC02D2D5CEE005DF26A /* Build configuration list for PBXProject "DailyTask_week3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEADEDB2D2D5CF0005DF26A /* Debug */,
+				9EEADEDC2D2D5CF0005DF26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EEADED82D2D5CF0005DF26A /* Build configuration list for PBXNativeTarget "DailyTask_week3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEADED92D2D5CF0005DF26A /* Debug */,
+				9EEADEDA2D2D5CF0005DF26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9EBB05D82D2FDD98002C52D6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		9EEADF672D2D5D8E005DF26A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9EBB05D92D2FDD98002C52D6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EBB05D82D2FDD98002C52D6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		9EEADF682D2D5D8E005DF26A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EEADF672D2D5D8E005DF26A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9EEADEBD2D2D5CEE005DF26A /* Project object */;
+}
